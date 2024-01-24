@@ -2,8 +2,7 @@ book_filename: "Course_Name"
 chapter_name: "Chapter "
 repo: https://github.com/jhudsl/AnVIL_Template/
 rmd_files: ["index.Rmd",
-            "01-intro.Rmd",
-            "03-BioDIGS_project_overview.Rmd",
+            "01-BioDIGS_project_overview.Rmd",
             "04-data_tour.Rmd",
             "08-data_cleaning.Rmd",
             "08-data_exploration.Rmd",
