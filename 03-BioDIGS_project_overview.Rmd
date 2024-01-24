@@ -38,7 +38,7 @@ Soil sampling for this project was done by both faculty and student volunteers f
 
 **Annandale, VA**: Northern Virginia Community College
 **Atlanta, GA**: Spelman College
-**Baltimore, MD**: Notre Dame College of Maryland, Towson University, College of Southern Maryland
+**Baltimore, MD**: College of Southern Maryland, Notre Dame College of Maryland, Towson University
 **Bismark, ND**: United Tribes Technical College
 **El Paso, TX**: El Paso Community College, The University of Texas at El Paso
 **Fresno, CA**: Clovis Community College
@@ -56,6 +56,8 @@ Soil sampling for this project was done by both faculty and student volunteers f
 ## Funding
 
 Funding for this project has been provided by the [National Human Genome Research Institute](https://www.genome.gov/) (Contract # 75N92022P00232 awarded to Johns Hopkins University), as well as by donations from [PacBio](https://www.pacb.com/) and [CosmosID](https://www.cosmosid.com/).
+
+Computational support has been provided by NHGRI's [AnVIL](https://anvilproject.org/) cloud computing platform and [Galaxy](usegalaxy.org).
 
 
 ## References
