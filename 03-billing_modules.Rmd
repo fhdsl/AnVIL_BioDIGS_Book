@@ -1,6 +1,7 @@
 ```{r echo = FALSE}
 knitr::opts_chunk$set(out.width = "100%")
 ```
+# (PART\*) Using AnVIL {-}
 
 # Billing on AnVIL
 
