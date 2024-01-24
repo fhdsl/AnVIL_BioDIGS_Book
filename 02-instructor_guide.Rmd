@@ -1,9 +1,7 @@
 
 # A new chapter
 
-*If you haven't yet read the getting started Wiki pages; [start there](https://github.com/jhudsl/OTTR_Template/wiki/Getting-started)
 
-Every chapter needs to start out with this chunk of code:
 
 ```{r, include = FALSE}
 ottrpal::set_knitr_image_path()
@@ -96,9 +94,6 @@ This works:
 knitr::include_url("https://www.bgsu.edu/content/dam/BGSU/center-for-faculty-excellence/docs/TLGuides/TLGuide-Learning-Objectives.pdf", height = "800px")
 ```
 
-Or this:
-
-[This works](https://www.bgsu.edu/content/dam/BGSU/center-for-faculty-excellence/docs/TLGuides/TLGuide-Learning-Objectives.pdf).
 
 Or this:
 
