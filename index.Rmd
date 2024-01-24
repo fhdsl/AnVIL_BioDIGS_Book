@@ -1,13 +1,13 @@
 ---
-title: "BioDIGS in the Classroom"
+title: "GDSCN Book: BioDIGS in the Classroom"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
 biblio-style: apalike
 link-citations: yes
-description: Description about Course/Book.
-favicon: assets/AnVIL_style/anvil_favicon.ico
+description: "This is a companion training guide for BioDIGS, a GDSCN project."
+favicon: assets/GDSCN_style/gdscn_favicon.ico
 ---
 
 
