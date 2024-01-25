@@ -2,7 +2,7 @@
 knitr::opts_chunk$set(out.width = "100%")
 ```
 
-# Using Programming Platforms
+# Programming Platforms
 
 These sections provide a general overview of how to use RStudio and Galaxy on AnVIL.
 

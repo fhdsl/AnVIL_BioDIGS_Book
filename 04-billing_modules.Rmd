@@ -3,7 +3,7 @@ knitr::opts_chunk$set(out.width = "100%")
 ```
 # (PART\*) Using AnVIL {-}
 
-# Billing on AnVIL
+# Billing
 
 In order to use AnVIL, you will need to set up a billing account and add members to it. These sections guide you through that process.
 

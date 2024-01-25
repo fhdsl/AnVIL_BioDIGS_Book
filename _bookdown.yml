@@ -8,7 +8,6 @@ rmd_files: ["index.Rmd",
             "04-billing_modules.Rmd",
             "05-anvil_onboarding.Rmd",
             "06-using_platforms_modules.Rmd",
-            "08-data_cleaning.Rmd",
             "08-data_exploration.Rmd",
             "About.Rmd"]
 new_session: yes

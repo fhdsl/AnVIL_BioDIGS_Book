@@ -4,8 +4,9 @@
 ```{r, include = FALSE}
 ottrpal::set_knitr_image_path()
 ```
+# Instructor Guide
 
-# Student instructions
+# Student Guide
 
 Modules aimed at students in a course or workshop.
  
