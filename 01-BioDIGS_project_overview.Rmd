@@ -1,7 +1,7 @@
 
-# (PART\*) Overview {-}
+# (PART\*) BioDIGS Overview {-}
 
-# The BioDIGS Project
+# Background
 
 The BioDIGS Project aims to be at the intersection of genomics, data science, cloud computing, and education.
 
