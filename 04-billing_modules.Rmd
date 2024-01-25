@@ -5,7 +5,7 @@ knitr::opts_chunk$set(out.width = "100%")
 
 # Billing on AnVIL
 
-Modules about billing and Billing Projects on Google Cloud Platform and Terra.
+In order to use AnVIL, you will need to set up a billing account and add members to it. These sections guide you through that process.
 
 <br>
 
