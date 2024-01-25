@@ -2,6 +2,8 @@
 
 This project is coordinated by the Genomics Data Science Community Network (GDSCN). You can read more about the GDSCN and its mission at the network's [website](https://www.gdscn.org/home).
 
+## Soil sampling 
+
 Soil sampling for this project was done by both faculty and student volunteers from schools that aren't traditional R1 research institutions. Many of the faculty are also members of the GDSCN.
 
 - **Annandale, VA**: Northern Virginia Community College
