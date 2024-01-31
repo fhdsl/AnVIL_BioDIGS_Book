@@ -14,17 +14,17 @@ Soil sampling for this project was done by both faculty and student volunteers f
 - **Fresno, CA**: Clovis Community College
 - **Greensboro, NC**: North Carolina A&T State University
 - **Harrisonburg, VA**: James Madison University
-- **Honolulu, Hawai'i**: University of Hawai'i at Mānoa
-- **Las Cruces, NM**: Doña Ana Community College
+- **Honolulu, Hawai'i**: University of Hawai'i at M&amacr;noa
+- **Las Cruces, NM**: Do&ntilde;a Ana Community College
 - **Montgomery County, MD**: Montgomery College, Towson University
 - **Nashville, TN**: Meharry Medical College
-- **New York, NY**: Guttman Community COllege CUNY
+- **New York, NY**: Guttman Community College CUNY
 - **Petersburg, VA**: Virginia State University
 - **Seattle, WA**: North Seattle College, Pierce College
-- **Tsaile, AZ**: Diné College
-
+- **Tsaile, AZ**: Din&eacute; College  
+  
 ## Funding
-
+  
 Funding for this project has been provided by the [National Human Genome Research Institute](https://www.genome.gov/) (Contract # 75N92022P00232 awarded to Johns Hopkins University), as well as by donations from [PacBio](https://www.pacb.com/) and [CosmosID](https://www.cosmosid.com/).
 
 [Advances in Genome Biology and Technology](https://www.agbt.org/) provided funding support for several team members to attend AGBT 2024.
