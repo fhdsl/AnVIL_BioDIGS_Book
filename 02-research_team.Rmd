@@ -1,10 +1,20 @@
+```{r include=FALSE}
+library(knitr)
+```
+
 # Research Team
 
 This project is coordinated by the Genomics Data Science Community Network (GDSCN). You can read more about the GDSCN and its mission at the network [website](https://www.gdscn.org/home).
 
 ## Soil sampling 
 
-Soil sampling for this project was done by both faculty and student volunteers from schools that aren't traditional R1 research institutions. Many of the faculty are also members of the GDSCN.
+This map shows the current sampling locations for the BioDIGS project. The extensive network of the GDSCN has made this data collection possible. 
+
+```{r include=FALSE}
+knitr::include_url("https://www.google.com/maps/d/viewer?mid=1j6lqxJuQ1ACOmtT14TKdZ2D127XYnok&ll=35.52328736198404%2C-115.93205645&z=2")
+```
+
+Soil sampling for this project was done by both faculty and student volunteers from schools that aren't traditional R1 research institutions. Many of the faculty are also members of the GDSCN. This list of locations reflects GDSCN institutions and friends of GDSCN who have collected soil samples.
 
 - **Annandale, VA**: Northern Virginia Community College
 - **Atlanta, GA**: Spelman College
