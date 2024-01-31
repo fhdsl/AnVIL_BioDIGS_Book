@@ -2,9 +2,9 @@ abiotic
 al
 Annandale
 AnVIL
+BiocManager
 BioDIGS
 BioDiversity
-BiocManager
 bioinformatics
 BIPOC
 Bloomberg
@@ -19,8 +19,7 @@ CUNY
 customizations
 dex
 dexamethasone
-Diné
-Doña
+Dine
 dropdown
 El
 et
@@ -37,8 +36,8 @@ impactful
 Inclusivity
 Jupyter
 limma
-MDS
 Manoa
+MDS
 Meharry
 mentorship
 metagenomics
@@ -69,6 +68,6 @@ Tsaile
 underresourced
 underserved
 wip
-Workspaces
 Workspace's
+Workspaces
 www
