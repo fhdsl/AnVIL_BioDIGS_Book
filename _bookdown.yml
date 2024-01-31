@@ -1,6 +1,6 @@
-book_filename: "Course_Name"
+book_filename: "BioDIGS in the Classroom"
 chapter_name: "Chapter "
-repo: https://github.com/jhudsl/AnVIL_Template/
+repo: https://github.com/jhudsl/AnVIL_BioDIGS_Book/
 rmd_files: ["index.Rmd",
             "01-BioDIGS_project_overview.Rmd",
             "02-research_team.Rmd",
