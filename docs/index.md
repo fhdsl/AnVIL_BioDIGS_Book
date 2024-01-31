@@ -1,6 +1,6 @@
 ---
 title: "GDSCN Book: BioDIGS in the Classroom"
-date: "January 29, 2024"
+date: "January 31, 2024"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -17,6 +17,7 @@ This is a companion training guide for BioDIGS, a GDSCN project that brings a re
 
 The GDSCN (Genomics Data Science Community Network) is a consortium of educators who aim to create a world where researchers, educators, and students from diverse backgrounds are able to fully participate in genomic data science research. You can find more information about its mission and initiatives [here](https://www.gdscn.org/home).
 
+![BioDIGS logo](https://raw.githubusercontent.com/fhdsl/AnVIL_BioDIGS_Book/main/assets/GDSCN_style/logo_BioDIGS_final.png){width=300px}
 
 ## Target Audience
 
