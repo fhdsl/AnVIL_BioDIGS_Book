@@ -4,142 +4,178 @@
 ```{r, include = FALSE}
 ottrpal::set_knitr_image_path()
 ```
-# Instructor Guide
 
-# Student Guide
+# Exploring Soil Testing Data With R
 
-Modules aimed at students in a course or workshop.
- 
-<br>
- 
-## Student Account Setup
- 
-:::: {.borrowed_chunk}
-```{r, echo = FALSE, results='asis'}
-cow::borrow_chapter(
-  doc_path = "child/_child_student_create_account.Rmd",
-  repo_name = "jhudsl/AnVIL_Template"
-)
+
+
+## Opening the environment
+
+## Part 1. Data Import
+
+We will use the `readr` package to import the current soil testing dataset from the [BioDIGS](https://biodigs.org/#soil_data) website. The dataset is saved in a comma separated values, or csv, format, so we need to use the `read_csv` command. This command follows the code structure:
+
+dataset <- read_csv(FILE)
+
+```{r, message = FALSE, warning = FALSE}
+
+library(readr)
+soil.values <- read_csv(file = "https://biodigs.org/session/c54558b5bd6750de7244bc29ad2b8e4b/download/soiltest_download?w=")
 ```
-::::
 
-## Student instructions for cloning a Workspace
+It _seems_ like the dataset loaded, but it's always a good idea to verify. There are many ways to check, but the easiest approach (if you're using RStudio) is to look at the Environment tab on the upper right-hand side of the screen. You should now have an object called `soil.values` that includes some number of observations for 28 variables. The _observations_ refer to the number of rows in the dataset, while the _variables_ tell you the number of columns. As long as neither the observations or variables are 0, you can be confident that your dataset loaded.
 
-These instructions can be customized to a specific workspace by setting certain variables before running `cow::borrow_chapter()`.  If these variables have not been set, reasonable defaults are provided (e.g. "ask your instructor").
+Let's take a quick look at the dataset. We can do this by clicking on soil.values object in the Environment tab. (Note: this is equivalent to typing `View(soil.values)` in the R console.)
 
-### With no variables set:
+<img src="resources/images/08-environment.png" title="If the dataset loaded, you will see an object with non-zero observations and variables in the Environment tab" alt="If the dataset loaded, you will see an object with non-zero observations and variables in the Environment tab" style="display: block; margin: auto;" />
 
-:::: {.borrowed_chunk}
-```{r, echo = FALSE, results='asis'}
-cow::borrow_chapter(
-  doc_path = "child/_child_student_workspace_clone.Rmd",
-  repo_name = "jhudsl/AnVIL_Template"
-)
+
+This will open a new window for us to scroll through the dataset.
+
+<img src="resources/images/08-scrolling_through_dataset.png" title="You can click on the object in the Environment tab to open a new window that allows you to scroll through the loaded datase" alt="You can click on the object in the Environment tab to open a new window that allows you to scroll through the loaded dataset" style="display: block; margin: auto;" />
+
+Well, the data definitely loaded, but those column names aren't immediately understandable. What could **As_EPA3051** possibly mean? In addition to the dataset, we need to load the _data dictionary_ as well.
+
+:::{.dictionary}
+
+**Data dictionary:** a file containing the names, definitions, and attributes about data in a database or dataset.
+
+:::
+
+In this case, the data dictionary can help us make sense of what sort of values each column represents. The data dictionary for the BioDIGS soil testing data is available on the website, but we have also reproduced it here.
+
+:::{.dictionary}
+
+**site_id** Unique letter and number site name
+**full_name** Full site name
+**As_EPA3051** Arsenic (mg/kg), EPA Method 3051A. Quantities < 3.0 are not detectable.
+**Cd_EPA3051** Cadmium (mg/kg), EPA Method 3051A. Quantities < 0.2 are not detectable.
+**Cr_EPA3051** Chromium (mg/kg), EPA Method 3051A
+**Cu_EPA3051** Copper (mg/kg), EPA Method 3051A
+**Ni_EPA3051** Nickel (mg/kg), EPA Method 3051A
+**Pb_EPA3051** Lead (mg/kg), EPA Method 3051A
+**Zn_EPA3051** Zinc (mg/kg), EPA Method 3051A
+**water_pH**
+**A-E_Buffer_pH**
+**OM_by_LOI_pct** Organic Matter by Loss on Ignition
+**P_Mehlich3** Phosphorus (mg/kg), using the Mehlich 3 soil test extractant
+**K_Mehlich3 Potassium** (mg/kg), using the Mehlich 3 soil test extractant
+**Ca_Mehlich3** Calcium (mg/kg), using the Mehlich 3 soil test extractant
+**Mg_Mehlich3** Magnesium (mg/kg), using the Mehlich 3 soil test extractant
+**Mn_Mehlich3** Manganese (mg/kg), using the Mehlich 3 soil test extractant
+**Zn_Mehlich3** Zinc (mg/kg), using the Mehlich 3 soil test extractant
+**Cu_Mehlich3** Copper (mg/kg), using the Mehlich 3 soil test extractant
+**Fe_Mehlich3** Iron (mg/kg), using the Mehlich 3 soil test extractant
+**B_Mehlich3** Boron (mg/kg), using the Mehlich 3 soil test extractant
+**S_Mehlich3** Sulfur (mg/kg), using the Mehlich 3 soil test extractant
+**Na_Mehlich3** Sodium (mg/kg), using the Mehlich 3 soil test extractant
+**Al_Mehlich3** Aluminum (mg/kg), using the Mehlich 3 soil test extractant
+**Est_CEC** Cation Exchange Capacity (meq/100g) at pH 7.0 (CEC)
+**Base_Sat_pct** Base saturation (BS). This represents the percentage of CEC occupied by bases (Ca2+, Mg2+, K+, and Na+). The %BS increases with increasing soil pH. The availability of Ca2+, Mg2+, and K+ increases with increasing %BS.
+**P_Sat_ratio** Phosphorus saturation ratio. This is the ratio between the amount of phosphorus present in the soil and the total capacity of that soil to retain phosphorus. The ability of phosphorus to be bound in the soil is primary a function of iron (Fe) and aluminum (Al) content in that soil.
+
+:::
+
+Using the data dictionary, we find that the values in column `As_EPA3051` give us the arsenic concentration in mg/kg of each soil sample, as determined by EPA Method 3051A. While arsenic can occur naturally in soils, higher levels suggest the soil may have been contaminated by mining, hazardous waste, or pesticide application. Arsenic is toxic to humans.
+
+We can also look at just the names of all the columns using the R console using the `colnames()` command.
+
+```{r, message = FALSE, warning = FALSE}
+
+colnames(soil.values)
 ```
-::::
 
-### With variables set:
+Most of the column names are found in the data dictionary, but the very last column ("region") isn't. How peculiar! Let's look at what sort of values this particular column contains. The tab with the table of the `soil.views` object should still be open in the upper left pane of the RStudio window. If not, you can open it again by clicking on  `soils.view` in the Environment pane, or by using the `View()` command.
 
-:::: {.borrowed_chunk}
-```{r, echo = FALSE, results='asis'}
-# Specify variables
-AnVIL_module_settings <- list(
-  workspace_name = "Example_Workspace",
-  workspace_link = "http://example.com/",
-  billing_project = "Example Billing Project"
-)
+```{r, message = FALSE, warning = FALSE, eval = F}
 
-cow::borrow_chapter(
-  doc_path = "child/_child_student_workspace_clone.Rmd",
-  repo_name = "jhudsl/AnVIL_Template"
-)
+View(soil.values)
 ```
-::::
 
-## Student instructions for launching Jupyter
+<img src="resources/images/08-soil_values_object.png" title="Switch to the soil.values tab to look at what values are in the region column" alt="Switch to the soil.values tab to look at what values are in the region column" style="display: block; margin: auto;" />
 
-The module below is specially customized for students, allowing you to give more specific instructions on the settings for their Jupyter environment.  There are several other general purpose modules that may also be useful for students (e.g. Pausing Jupyter, Deleting Jupyter) that can be found in other chapters of this book.
 
-The following instructions can be customized by setting certain variables before running `cow::borrow_chapter()`. Developers should create these variables as a list `AnVIL_module_settings`. The following variables can be provided:
+If you scroll to the end of the table, we can see that "region" seems to refer to the city or area where the samples were collected. For example, the first 24 samples all come from Baltimore City.
 
-- `audience` = Defaults to `general`, telling them to use the default Jupyter settings. If `audience` is set to `student`, it gives more specific instructions.
-- `docker_image` = Optional, it will tell them how to set the image.
-- `startup_script` =  Optional, it will tell them how to set the script.
+<img src="resources/images/08-region.png" title="We can see the first samples in the dataset were collected in Baltimore City" alt="We can see the first samples in the dataset were collected in Baltimore City" style="display: block; margin: auto;" />
 
-### Using default Jupyter environment:
 
-:::: {.borrowed_chunk}
-```{r, echo = FALSE, results='asis'}
-# Specify variables
-AnVIL_module_settings <- list(
-  audience = "student"
-)
+You may notice that some cells in the `soil.values` table contain _NA_. This just means that the soil testing data for that sample isn't available yet. We'll take care of those values in the next part.
 
-cow::borrow_chapter(
-  doc_path = "child/_child_jupyter_launch.Rmd",
-  repo_name = "jhudsl/AnVIL_Template"
-)
+::: {.reflection}
+QUESTIONS:
+
+1. How many observations are in the soil testing values dataset that you loaded? What do each of these observations refer to?
+
+2. What data is found in the column labeled "Fe_Mehlich3"? Why would we be interested how much of this is in the soil? (You may have to search the internet for this answer.)
+
+:::
+
+## Part 2. Data Exploration and Summarization
+
+Now that we have the dataset loaded, let's take explore the data in more depth.
+
+First, we should remove those samples that don't have soil testing data yet. We _could_ keep them in the dataset, but removing them at this stage will make the analysis a little cleaner. In this case, as we know the reason the data are missing (and that reason will not skew our analysis), we can safely remove these samples. This will not be the case for every data analysis.
+
+We can remove the unanalyzed samples using the `drop_na()` function from the `tidyr` package.This function removes any rows from a table that contains _NA_ for a particular column. This command follows the code structure:
+
+dataset_new_name <- dataset %>% drop_na(column_name)
+
+The `%>% is called a pipe and it tells R that the commands after it should all be applied to the object in front of it. (In this case, we can filter out all samples missing a value for "As_EPA3051" as a proxy for samples without soil testing data.)
+
+```{r, message = FALSE, warning = FALSE}
+
+library(tidyr)
+
+soil.values.clean <- soil.values %>% drop_na(As_EPA3051)
 ```
-::::
 
-### Using custom Jupyter environment:
+Great! Now let's calculate some basic statistics. For example, we might want to know what the mean (average) lead concentration is for each soil sample. According to the data dictionary, the values for lead concentration are in the column labeled "Pb_EPA3051". We can use a combination of two functions: `pull()` and `mean()`.`pull()` lets you extract a column from your table for statistical analysis, while `mean()` calculates the average value for the extracted column.
 
-:::: {.borrowed_chunk}
-```{r, echo = FALSE, results='asis'}
-# Specify variables
-AnVIL_module_settings <- list(
-  audience = "student",
-  docker_image = "example docker",
-  startup_script = "example startup script"
-)
+This command follows the code structure:
 
-cow::borrow_chapter(
-  doc_path = "child/_child_jupyter_launch.Rmd",
-  repo_name = "jhudsl/AnVIL_Template"
-)
+OBJECT %>% pull(column_name) %>% mean()
+
+```{r, message = FALSE, warning = FALSE}
+
+soil.values.clean %>% pull(As_EPA3051) %>% mean()
 ```
-::::
 
-## Student instructions for launching RStudio
+We can run similar commands to calculate the standard deviation, minimum, and maximum for the soil arsenic values.
 
-The module below is specially customized for students, allowing you to give more specific instructions on the settings for their RStudio environment.  There are several other general purpose modules that may also be useful for students (e.g. Pausing RStudio, Deleting RStudio) that can be found in other chapters of this book.
+```{r, message = FALSE, warning = FALSE}
 
-The following instructions can be customized by setting certain variables before running `cow::borrow_chapter()`. Developers should create these variables as a list `AnVIL_module_settings`. The following variables can be provided:
-
-- `audience` = Defaults to `general`, telling them to use the default RStudio settings. If `audience` is set to `student`, it gives more specific instructions.
-- `docker_image` = Optional, it will tell them to open the customization dialogue and direct them on how to set the image.
-- `startup_script` =  Optional, it will tell them to open the customization dialogue and direct them on how to set the script.
-
-### Using default RStudio environment:
-
-:::: {.borrowed_chunk}
-```{r, echo = FALSE, results='asis'}
-# Specify variables
-AnVIL_module_settings <- list(
-  audience = "student"
-)
-
-cow::borrow_chapter(
-  doc_path = "child/_child_rstudio_launch.Rmd",
-  repo_name = "jhudsl/AnVIL_Template"
-)
+soil.values.clean %>% pull(As_EPA3051) %>% sd()
+soil.values.clean %>% pull(As_EPA3051) %>% min()
+soil.values.clean %>% pull(As_EPA3051) %>% max()
 ```
-::::
 
-### Using custom RStudio environment:
 
-:::: {.borrowed_chunk}
-```{r, echo = FALSE, results='asis'}
-# Specify variables
-AnVIL_module_settings <- list(
-  audience = "student",
-  docker_image = "example docker",
-  startup_script = "example startup script"
-)
+The soil testing dataset contains samples from multiple geographic regions, so maybe it's more meaningful to find out what the average arsenic values are for each region. We have to do a little bit of clever coding trickery for this using the `group_by` and `summarize` functions. First, we tell R to split our dataset up by a particular column (in this case, region) using the `group_by` function, then we tell R to summarize the mean arsenic concentration for each group. Because there are several different functions with the name `summarize` in R, we have to specify that we want to use `summarize` from the `dplyr` package. This command follows the code structure:
 
-cow::borrow_chapter(
-  doc_path = "child/_child_rstudio_launch.Rmd",
-  repo_name = "jhudsl/AnVIL_Template"
-)
+dataset %>%
+    group_by(column_name) %>%
+    dplyr::summarize(Mean = mean(column_name))
+    
+```{r, message = FALSE, warning = FALSE}
+
+soil.values.clean %>%
+    group_by(region) %>%
+    dplyr::summarize(Mean = mean(As_EPA3051))
 ```
-::::
+
+Now we know that the mean arsenic concentration might be different for each region, and appears higher for the Baltimore City samples than the Montgomery County samples.
+
+::: {.reflection}
+QUESTIONS:
+
+3. What is the mean iron concentration for samples in this dataset? What about the standard deviation, minimum value, and maximum value?
+
+2. Calculate the mean iron concentration by region. Which region has the highest mean iron concentration? What about the lowest?
+
+:::
+
+## Part 3. Data Visualization
+
+You've calculated some statistics on the soil testing data. Often, it can be easier to immediately interpret these statistics in a plot than in a list of values. For example, we can get more easily understand how data values are distributed if we create histograms compared to looking at point values like mean, standard deviation, minimum, and maximum.
+
