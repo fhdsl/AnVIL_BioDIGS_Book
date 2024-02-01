@@ -15,7 +15,14 @@ In this activity, you'll have a chance to become familiar with the BioDIGS soil 
 
 We will use the `BioDIGS` package to retrieve the data. We first need to install the package from where it is store on GitHub.
 
-```{r, message = FALSE, warning = FALSE}
+```{r, message = FALSE, warning = FALSE, echo = FALSE}
+
+library(readr)
+soil.values <- read_csv(file = "https://biodigs.org/session/c54558b5bd6750de7244bc29ad2b8e4b/download/soiltest_download?w=")
+```
+
+
+```{r, message = FALSE, warning = FALSE, eval=F}
 
 devtools::install_github("fhdsl/BioDIGSData")
 ```
@@ -24,7 +31,7 @@ Once you've installed the package, we can load the library and  assign the soil 
 
 dataset_object_name <- stored_BioDIGS_dataset
 
-```{r, message = FALSE, warning = FALSE}
+```{r, message = FALSE, warning = FALSE, eval=F}
 
 library(BioDIGSData)
 
