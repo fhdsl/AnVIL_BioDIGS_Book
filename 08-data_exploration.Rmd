@@ -18,7 +18,7 @@ We will use the `BioDIGS` package to retrieve the data. We first need to install
 ```{r, message = FALSE, warning = FALSE, echo = FALSE}
 
 library(readr)
-soil.values <- read_csv(file = "soil_data.csv")
+soil.values <- read_csv(file = "soil_testing_data.csv")
 ```
 
 
