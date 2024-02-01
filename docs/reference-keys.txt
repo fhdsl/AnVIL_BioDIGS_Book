@@ -7,7 +7,6 @@ what-is-data-science
 what-is-cloud-computing
 why-soil-microbes
 heavy-metals-and-human-health
-references
 research-team
 soil-sampling
 funding
@@ -61,3 +60,4 @@ using-custom-jupyter-environment
 student-instructions-for-launching-rstudio
 using-default-rstudio-environment
 using-custom-rstudio-environment
+references
