@@ -7,9 +7,80 @@ ottrpal::set_knitr_image_path()
 
 # Exploring Soil Testing Data With R
 
-In this activity, you'll have a chance to become familiar with the BioDIGS soil testing data. This dataset includes information on the inorganic components of each soil sample. 
+In this activity, you'll have a chance to become familiar with the BioDIGS soil testing data. This dataset includes information on the inorganic components of each soil sample, particularly metal concentrations. Human activity can increase the concentration of inorganic compounds in the soil. When cars drive on roads, compounds from the exhaust, oil, and other fluids might settle onto the roads and be washed into the soil. When we put salt on roads, parking lots, and sidewalks, the salts themselves will eventually be washed away and enter the ecosystem through both water and soil. Chemicals from factories and other businesses also leech into our environment. All of this means the concentration of heavy metals and other chemicals will vary among the soil samples collected for the BioDIGS project. 
 
-## Opening the environment
+## Before You Start
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_google_create_account.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+## Objectives
+
+This activity will teach you how to use the AnVIL platform to:
+
+1. Get started working on AnVIL
+1. Launch RStudio
+1. Import data into RStudio
+1. Examine csv file that contains the soil testing data from the BioDIGS project
+1. Calculate summary statistics for variables in the soil testing data
+1. Create and interpret histograms and boxplots for variables in the soil testing data.
+
+## Getting Started
+
+In the next few steps, you will walk through how to get set up to use RStudio on the AnVIL platform. AnVIL is centered around different “Workspaces”. Each Workspace functions almost like a mini code laboratory - it is a place where data can be examined, stored, and analyzed. The first thing we want to do is to copy or “clone” a Workspace to create a space for you to experiment.
+
+Use a web browser to go to the AnVIL website. In the browser type:
+
+```
+anvil.terra.bio
+```
+
+:::{.notice}
+**Tip**
+At this point, it might make things easier to open up a new window in your browser and split your screen. That way, you can follow along with this guide on one side and execute the steps on the other.
+:::
+
+Your instructor will give you information on which workspace you should clone.
+
+### Video overview of RStudio on AnVIL
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_rstudio_video.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+### Launching RStudio
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_rstudio_launch.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+### Touring RStudio
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_rstudio_tour.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+### Pausing RStudio
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_rstudio_pause.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
 
 ## Part 1. Data Import
 
