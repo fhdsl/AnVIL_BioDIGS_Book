@@ -23,9 +23,9 @@ cow::borrow_chapter(
 This activity will teach you how to use the AnVIL platform to:
 
 1. Import data into RStudio
-1. Examine csv file that contains the soil testing data from the BioDIGS project
+1. Examine a csv file that contains the soil testing data from the BioDIGS project
 1. Calculate summary statistics for variables in the soil testing data
-1. Create and interpret histograms and boxplots for variables in the soil testing data.
+1. Create and interpret histograms and boxplots for variables in the soil testing data
 
 
 ## Part 1. Data Import
