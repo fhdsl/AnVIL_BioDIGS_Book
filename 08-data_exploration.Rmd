@@ -202,7 +202,7 @@ QUESTIONS:
 
 :::
 
-## Part 2. Data Exploration and Summarization
+## Part 2. Data Summarization
 
 Now that we have the dataset loaded, let's explore the data in more depth.
 
