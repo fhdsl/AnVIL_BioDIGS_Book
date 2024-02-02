@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 6 AnVIL Workspace | GDSCN Book: BioDIGS in the Classroom</title>
+  <title>Chapter 9 Checklist for Running Activities on AnVIL | GDSCN Book: BioDIGS in the Classroom</title>
   <meta name="description" content="This is a companion training guide for BioDIGS, a GDSCN project." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 6 AnVIL Workspace | GDSCN Book: BioDIGS in the Classroom" />
+  <meta property="og:title" content="Chapter 9 Checklist for Running Activities on AnVIL | GDSCN Book: BioDIGS in the Classroom" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 6 AnVIL Workspace | GDSCN Book: BioDIGS in the Classroom" />
+  <meta name="twitter:title" content="Chapter 9 Checklist for Running Activities on AnVIL | GDSCN Book: BioDIGS in the Classroom" />
   
   <meta name="twitter:description" content="This is a companion training guide for BioDIGS, a GDSCN project." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/GDSCN_style/gdscn_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="billing.html"/>
-<link rel="next" href="programming-platforms.html"/>
+<link rel="prev" href="notes-for-instructors.html"/>
+<link rel="next" href="setting-up-billing-on-anvil.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -276,35 +276,67 @@ div.csl-indent {
 <div class="hero-image-container">
   <img class= "hero-image" src="assets/GDSCN_style/dasl_thin_main_image.png">
 </div>
-<div id="anvil-workspace" class="section level1" number="6">
-<h1><span class="header-section-number">Chapter 6</span> AnVIL Workspace</h1>
-<p>You can easily access the data on AnVIL by cloning the dedicated workspace. These sections guide you through creating an AnVIL account and accessing the workspace.</p>
-<div id="create-google-account" class="section level2" number="6.1">
-<h2><span class="header-section-number">6.1</span> Create Google Account</h2>
-<p>If you do not already have a Google account that you would like to use for accessing Terra, <a href="https://accounts.google.com/SignUp">create one now</a>.</p>
-<p>If you would like to create a Google account that is associated with your non-Gmail, institutional email address, follow <a href="https://support.terra.bio/hc/en-us/articles/360029186611">these instructions</a>.</p>
+<div id="checklist-for-running-activities-on-anvil" class="section level1" number="9">
+<h1><span class="header-section-number">Chapter 9</span> Checklist for Running Activities on AnVIL</h1>
+<p>If you choose to run these activities on AnVIL with your class, there are several things that you can do to make the experience easier.</p>
+<div id="before-the-class-begins" class="section level2 unnumbered">
+<h2>Before the class begins</h2>
+<p>This checklist can serve as a reminder of the overall suggested steps to run an activity on AnVIL. You might find yourself changing these steps slightly as you become more familiar with AnVIL.</p>
+<p><strong>Billing</strong></p>
+<ul>
+<li>Obtain funding through the <a href="https://datascience.nih.gov/strides">STRIDES</a> program (optional)</li>
+<li>Request students make AnVIL IDs (Google IDs)</li>
+<li>Collect AnVIL IDs (Google IDs) from students</li>
+<li>Create Google Billing Account for your class</li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li>Create a Workspace for your class (optional)</li>
+<li>Notify Terra of your course dates and times</li>
+<li>Direct students to the Workspace</li>
+</ul>
+<p><strong>Permissions</strong></p>
+<ul>
+<li>Set up Groups to manage permissions</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left">AnVIL Group</th>
+<th align="left">Class Workspace</th>
+<th align="left">Terra Billing Projects*</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Instructor</td>
+<td align="left">Owner</td>
+<td align="left">Owner</td>
+</tr>
+<tr class="even">
+<td align="left">Teaching assistants</td>
+<td align="left">Writer</td>
+<td align="left">Owner</td>
+</tr>
+<tr class="odd">
+<td align="left">Students</td>
+<td align="left">Reader</td>
+<td align="left">User</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="clone-the-workspace" class="section level2" number="6.2">
-<h2><span class="header-section-number">6.2</span> Clone the Workspace</h2>
-<ol style="list-style-type: decimal">
-<li><p><a href="https://anvil.terra.bio/#workspaces">Launch Terra</a></p></li>
-<li><p>Locate the Workspace you want to clone. If a Workspace has been shared with you ahead of time, it will appear in “MY WORKSPACES”. You can clone a Workspace that was shared with you to perform your own analyses. In the screenshot below, no Workspaces have been shared.</p>
-<p><img src="resources/images/05-anvil_onboarding_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_0.png" title="Screenshot of Terra &quot;MY WORKSPACES&quot; menu. The &quot;MY WORKSPACES&quot; tab is highlighted. No Workspaces are visible because none have been shared with the user. There is an option to create a new Workspace." alt="Screenshot of Terra &quot;MY WORKSPACES&quot; menu. The &quot;MY WORKSPACES&quot; tab is highlighted. No Workspaces are visible because none have been shared with the user. There is an option to create a new Workspace." width="480" /></p></li>
-<li><p>If a Workspace hasn’t been shared with you, navigate to the “FEATURED” or “PUBLIC” Workspace tabs.</p>
-<p><img src="resources/images/05-anvil_onboarding_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_144.png" title="Screenshot of Terra &quot;My Workspaces&quot; menu. The &quot;FEATURED&quot; tab is highlighted." alt="Screenshot of Terra &quot;My Workspaces&quot; menu. The &quot;FEATURED&quot; tab is highlighted." width="480" /></p></li>
-<li><p>Use the search box to find the Workspace you want to clone.</p>
-<p><img src="resources/images/05-anvil_onboarding_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_288.png" title="Screenshot of Terra &quot;My Workspaces&quot; menu. The search bar is highlighted and the user has typed in the term &quot;COVID-19&quot;. A Workspace related to COVID-19 appears in the results." alt="Screenshot of Terra &quot;My Workspaces&quot; menu. The search bar is highlighted and the user has typed in the term &quot;COVID-19&quot;. A Workspace related to COVID-19 appears in the results." width="480" /></p></li>
-<li><p>Click the teardrop button on the far right next to the Workspace you want to clone. Click “Clone”. You can also clone the Workspace from the Workspace Dashboard instead of the search results.</p>
-<p><img src="resources/images/05-anvil_onboarding_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_432.png" title="Screenshot of Terra &quot;My Workspaces&quot; menu with the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The &quot;Clone&quot; option from the list is highlighted." alt="Screenshot of Terra &quot;My Workspaces&quot; menu with the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The &quot;Clone&quot; option from the list is highlighted." width="480" />
-<img src="resources/images/05-anvil_onboarding_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_577.png" title="Screenshot of the Dashboard for the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The &quot;Clone&quot; option from the list is highlighted." alt="Screenshot of the Dashboard for the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The &quot;Clone&quot; option from the list is highlighted." width="480" /></p></li>
-<li><p>You will see a popup box appear. Name your Workspace and select the appropriate Terra Billing Project. <strong>All activity in the Workspace will be charged to this Billing Project</strong> (regardless of who conducted it). Remember that each Workspace should have its own Billing Project.</p>
-<p><img src="resources/images/05-anvil_onboarding_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_722.png" title="Screenshot of the &quot;clone workspace&quot; Terra popup dialog box. The Workspace name and Billing Project dropdown are highlighted. Text has been filled in for the Workspace name as &quot;Lab-member-1-workspace-2&quot;." alt="Screenshot of the &quot;clone workspace&quot; Terra popup dialog box. The Workspace name and Billing Project dropdown are highlighted. Text has been filled in for the Workspace name as &quot;Lab-member-1-workspace-2&quot;." width="480" /></p></li>
-<li><p>If you are working with protected data, you can set the <strong>Authorization Domain</strong> to limit who can be added to your Workspace. Note that the Authorization Domain cannot be changed after the Workspace is created (i.e. there is no way to make this Workspace shareable with a larger audience in the future). Workspaces by default are only visible to people you specifically share them with. Authorization domains add an extra layer of enforcement over privacy, but by nature make sharing more complicated. We recommend using Authorization Domains in cases where it is extremely important and/or legally required that the data be kept private (e.g. protected patient data, industry data). For data you would merely prefer not be shared with the world, we recommend relying on standard Workspace sharing permissions rather than Authorization Domains, as Authorization Domains can make future collaborations, publications, or other sharing complicated.</p>
-<p><img src="resources/images/05-anvil_onboarding_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_867.png" title="Screenshot of Terra popup dialog box for creating a new Workspace. The drop-down menu labeled &quot;Authorization domain&quot; is highlighted." alt="Screenshot of Terra popup dialog box for creating a new Workspace. The drop-down menu labeled &quot;Authorization domain&quot; is highlighted." width="480" /></p></li>
-<li><p>Click “CLONE WORKSPACE”. The new Workspace should now show up under your Workspaces.</p>
-<p><img src="resources/images/05-anvil_onboarding_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_1012.png" title="Screenshot of Terra popup dialog box for creating a new Workspace. The &quot;Clone Workspace&quot; button is highlighted." alt="Screenshot of Terra popup dialog box for creating a new Workspace. The &quot;Clone Workspace&quot; button is highlighted." width="480" /></p></li>
-</ol>
-
+<div id="after-the-class-ends" class="section level2 unnumbered">
+<h2>After the class ends</h2>
+<p><strong>Resources</strong></p>
+<ul>
+<li>Remind students to download any files they might need</li>
+<li>Tell students to delete their environments and persistent disks</li>
+</ul>
+<p><strong>Billing</strong></p>
+<ul>
+<li>Deactivate billing project</li>
+</ul>
 </div>
 </div>
 <hr>
@@ -320,8 +352,8 @@ div.csl-indent {
           </div>
         </div>
       </div>
-<a href="billing.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="programming-platforms.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="notes-for-instructors.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="setting-up-billing-on-anvil.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
