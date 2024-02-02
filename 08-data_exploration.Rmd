@@ -13,7 +13,7 @@ In this activity, you'll have a chance to become familiar with the BioDIGS soil 
 
 ## Part 1. Data Import
 
-We will use the `BioDIGS` package to retrieve the data. We first need to install the package from where it is store on GitHub.
+We will use the `BioDIGS` package to retrieve the data. We first need to install the package from where it is stored on GitHub.
 
 ```{r, message = FALSE, warning = FALSE, echo = FALSE}
 
@@ -27,7 +27,7 @@ soil.values <- read_csv(file = "soil_testing_data.csv")
 devtools::install_github("fhdsl/BioDIGSData")
 ```
 
-Once you've installed the package, we can load the library and  assign the soil testing data to an _object_. This command follows the code structure:
+Once you've installed the package, we can load the library and assign the soil testing data to an _object_. This command follows the code structure:
 
 dataset_object_name <- stored_BioDIGS_dataset
 
@@ -47,7 +47,7 @@ Let's take a quick look at the dataset. We can do this by clicking on soil.value
 
 This will open a new window for us to scroll through the dataset.
 
-<img src="resources/images/08-scrolling_through_dataset.png" title="You can click on the object in the Environment tab to open a new window that allows you to scroll through the loaded datase" alt="You can click on the object in the Environment tab to open a new window that allows you to scroll through the loaded dataset" style="display: block; margin: auto;" />
+<img src="resources/images/08-scrolling_through_dataset.png" title="You can click on the object in the Environment tab to open a new window that allows you to scroll through the loaded dataset" alt="You can click on the object in the Environment tab to open a new window that allows you to scroll through the loaded dataset" style="display: block; margin: auto;" />
 
 Well, the data definitely loaded, but those column names aren't immediately understandable. What could **As_EPA3051** possibly mean? In addition to the dataset, we need to load the _data dictionary_ as well.
 
@@ -133,11 +133,11 @@ QUESTIONS:
 
 ## Part 2. Data Exploration and Summarization
 
-Now that we have the dataset loaded, let's take explore the data in more depth.
+Now that we have the dataset loaded, let's explore the data in more depth.
 
 First, we should remove those samples that don't have soil testing data yet. We _could_ keep them in the dataset, but removing them at this stage will make the analysis a little cleaner. In this case, as we know the reason the data are missing (and that reason will not skew our analysis), we can safely remove these samples. This will not be the case for every data analysis.
 
-We can remove the unanalyzed samples using the `drop_na()` function from the `tidyr` package.This function removes any rows from a table that contains _NA_ for a particular column. This command follows the code structure:
+We can remove the unanalyzed samples using the `drop_na()` function from the `tidyr` package. This function removes any rows from a table that contains _NA_ for a particular column. This command follows the code structure:
 
 dataset_new_name <- dataset %>% drop_na(column_name)
 
@@ -201,7 +201,7 @@ QUESTIONS:
 
 ## Part 3. Data Visualization
 
-Often, it can be easier to immediately interpret data displayed as a plot than as a list of values. For example, we can get more easily understand how the arsenic concentration of the soil samples are distributed if we create histograms compared to looking at point values like mean, standard deviation, minimum, and maximum.
+Often, it can be easier to immediately interpret data displayed as a plot than as a list of values. For example, we can more easily understand how the arsenic concentration of the soil samples are distributed if we create histograms compared to looking at point values like mean, standard deviation, minimum, and maximum.
 
 One way to make histograms in R is to use the `hist()` function. We can again use the `pull()` command and pipes (`%>%`) to choose the column we want from the `soil.values.clean` dataset and make a histogram of them. Remember, this command follows the code structure:
 
@@ -238,12 +238,12 @@ boxplot(As_EPA3051 ~ region, data = soil.values.clean,
         ylab = "Arsenic Concentration in mg/kg")
 ```
 
-By using a boxplot, we can quickly see that, while one sampling site within Baltimore City has a very high concentration of arsenic in the soil, in general there isn't a different in arsenic content between Baltimore City and Montgomery County.
+By using a boxplot, we can quickly see that, while one sampling site within Baltimore City has a very high concentration of arsenic in the soil, in general there isn't a difference in arsenic content between Baltimore City and Montgomery County.
 
 ::: {.reflection}
 QUESTIONS:
 
-5. Create a histogram for iron concentration, as well as a boxplot comparing iron concentration by region. Is the iron concentration similar among regions? Are there any outlier sites with unusually high or low iron concentrations?
+5. Create a histogram for _iron_ concentration, as well as a boxplot comparing iron concentration by region. Is the iron concentration similar among regions? Are there any outlier sites with unusually high or low iron concentrations?
 
 6. Create a histogram for _lead_ concentration, as well as a boxplot comparing lead concentration by region. Is the lead concentration similar among regions? Are there any outlier sites with unusually high or low lead concentrations?
 
