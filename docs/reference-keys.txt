@@ -9,7 +9,9 @@ why-soil-microbes
 heavy-metals-and-human-health
 research-team
 soil-sampling
+support
 funding
+sponsors
 analytical-and-computational-support
 data-1
 sample-metadata
