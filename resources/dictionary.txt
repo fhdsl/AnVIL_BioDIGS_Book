@@ -9,6 +9,7 @@ BioDiversity
 bioinformatics
 BIPOC
 Bloomberg
+bmr
 Brevik
 Buffalari
 callout
@@ -35,6 +36,7 @@ Glimma
 glimmaMDS
 Gmail
 Gorovtsov
+GSuite
 Guttman
 Harrisonburg
 Hawai'i
@@ -44,6 +46,7 @@ Illumina
 impactful
 Inclusivity
 jenvman
+jhu
 Jupyter
 Jurkowski
 limma
