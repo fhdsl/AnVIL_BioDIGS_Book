@@ -90,7 +90,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinns
 
 ## Starting Galaxy {#starting-galaxy}
 
-Galaxy is a great tool for performing bioinformatics analysis without having to update software or worry too much about coding. In order to use Galaxy, we need to create a cloud environment. This is like quickly renting a few computers from Google as the engine to power our Galaxy analysis. 
+Galaxy is a free, relatively easy to use bioinformatics implementation package. It changes command line programs into GUI based programs and is a great tool for performing bioinformatics analysis without having to update software or worry too much about coding. In order to use Galaxy, we need to create a cloud environment. This is like quickly renting a few computers from Google as the engine to power our Galaxy analysis. 
 
 :::{.warning}
 Currently, you will need to use Chrome or Safari as your browser for Galaxy cloud environments to work.
