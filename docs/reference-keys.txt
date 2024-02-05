@@ -72,10 +72,14 @@ launching-rstudio-1
 touring-rstudio-1
 pausing-rstudio-1
 using-galaxy-on-anvil
+video-overview-on-using-galaxy-1
+objectives-4
+slides-4
 navigating-galaxy-1
+deleting-galaxy-1
 exploring-soil-testing-data-with-r
 before-you-start
-objectives-4
+objectives-5
 part-1.-data-import
 part-2.-data-summarization
 part-3.-data-visualization
