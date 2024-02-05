@@ -9,7 +9,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 |-------|-----|
 |**Pedagogy**||
 |Content Developer|Elizabeth Humphries|
-|Content Editors|[Ava Hoffman], Kate Isaac|
+|Content Editors|[Ava Hoffman], [Kate Isaac]|
 |Project Directors|[Ava Hoffman], [Michael Schatz], [Jeff Leek], [Frederick Tan]|
 |**Production**||
 |Content Publisher|[Ira Gooding]|
@@ -41,6 +41,7 @@ devtools::session_info()
 [Katherine Cox]: https://publichealth.jhu.edu/faculty/4170/katherine-cox
 [Ira Gooding]: https://publichealth.jhu.edu/faculty/4130/ira-gooding
 [Ava Hoffman]: https://www.avahoffman.com/
+[Kate Isaac]: https://kweav.github.io/
 [Jeff Leek]: https://jtleek.com/
 [John Muschelli]: https://johnmuschelli.com/
 [National Human Genome Research Institute (NHGRI)]: https://www.genome.gov/
