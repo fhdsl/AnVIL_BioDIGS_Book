@@ -27,8 +27,10 @@ CUNY
 customizations
 dex
 dexamethasone
-Dine
+Dine	
+Diné
 doi
+Doña
 dplyr
 dropdown
 El
@@ -56,7 +58,7 @@ Jurkowski
 limma
 LOI
 Manoa
-M&amacr;noa
+Mānoa
 MDS
 Meharry
 Mehlich
