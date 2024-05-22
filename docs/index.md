@@ -1,6 +1,6 @@
 ---
 title: "GDSCN Book: BioDIGS in the Classroom"
-date: "February 05, 2024"
+date: "May 22, 2024"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
