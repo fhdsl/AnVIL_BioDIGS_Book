@@ -10,6 +10,8 @@ rmd_files: ["index.Rmd",
             "06-using_platforms_modules.Rmd",
             "07-instructor_guide.Rmd",
             "08-student_anvil_guide.Rmd",
+            "08-student_using_rstudio.Rmd",
+            "08-student_using_galaxy.Rmd",
             "09-data_exploration.Rmd",
             "About.Rmd",
             "References.Rmd"]
