@@ -6,11 +6,7 @@ documentclass: book
 bibliography: book.bib
 biblio-style: apalike
 link-citations: yes
-<<<<<<< Updated upstream
 description: "This is a companion training guide for BioDIGS, a GDSCN project."
-=======
-description: "This activity guides students through exploration of the BioDIGS soil data using the tidyverse in R."
->>>>>>> Stashed changes
 favicon: assets/GDSCN_style/gdscn_favicon.ico
 ---
 
