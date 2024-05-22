@@ -38,8 +38,11 @@ customizations
 dex
 dexamethasone
 Dine
+Dine	
+Diné
 DISCOVERABLE
 doi
+Doña
 dplyr
 dropdown
 El
@@ -85,6 +88,7 @@ LICENSOR
 limma
 LOI
 Manoa
+Mānoa
 MDS
 MERCHANTABILITY
 Meharry
