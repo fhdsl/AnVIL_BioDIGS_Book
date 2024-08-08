@@ -32,7 +32,7 @@ We will use the `BioDIGS` package to retrieve the data. We first need to install
 
 
 
-```r
+``` r
 devtools::install_github("fhdsl/BioDIGSData")
 ```
 
@@ -41,7 +41,7 @@ Once you've installed the package, we can load the library and assign the soil t
 dataset_object_name <- stored_BioDIGS_dataset
 
 
-```r
+``` r
 library(BioDIGSData)
 
 soil.values <- BioDIGS_soil_data()
@@ -69,7 +69,7 @@ Well, the data definitely loaded, but those column names aren't immediately unde
 In this case, the data dictionary can help us make sense of what sort of values each column represents. The data dictionary for the BioDIGS soil testing data is available in the R package (see code below), but we have also reproduced it here.
 
 
-```r
+``` r
 ?BioDIGS_soil_data()
 ```
 
@@ -110,7 +110,7 @@ Using the data dictionary, we find that the values in column `As_EPA3051` give u
 We can also look at just the names of all the columns using the R console using the `colnames()` command.
 
 
-```r
+``` r
 colnames(soil.values)
 ```
 
@@ -127,7 +127,7 @@ colnames(soil.values)
 Most of the column names are found in the data dictionary, but the very last column ("region") isn't. How peculiar! Let's look at what sort of values this particular column contains. The tab with the table of the `soil.views` object should still be open in the upper left pane of the RStudio window. If not, you can open it again by clicking on  `soils.view` in the Environment pane, or by using the `View()` command.
 
 
-```r
+``` r
 View(soil.values)
 ```
 
@@ -163,7 +163,7 @@ dataset_new_name <- dataset %>% drop_na(column_name)
 The `%>% is called a pipe and it tells R that the commands after it should all be applied to the object in front of it. (In this case, we can filter out all samples missing a value for "As_EPA3051" as a proxy for samples without soil testing data.)
 
 
-```r
+``` r
 library(tidyr)
 
 soil.values.clean <- soil.values %>% drop_na(As_EPA3051)
@@ -178,7 +178,7 @@ OBJECT %>% pull(column_name) %>% mean()
 `pull()` is a command from the `tidyverse` package, so we'll need to load that library before our command.
 
 
-```r
+``` r
 library(tidyverse)
 
 soil.values.clean %>% pull(As_EPA3051) %>% mean()
@@ -191,7 +191,7 @@ soil.values.clean %>% pull(As_EPA3051) %>% mean()
 We can run similar commands to calculate the standard deviation, minimum, and maximum for the soil arsenic values.
 
 
-```r
+``` r
 soil.values.clean %>% pull(As_EPA3051) %>% sd()
 ```
 
@@ -199,7 +199,7 @@ soil.values.clean %>% pull(As_EPA3051) %>% sd()
 ## [1] 5.606926
 ```
 
-```r
+``` r
 soil.values.clean %>% pull(As_EPA3051) %>% min()
 ```
 
@@ -207,7 +207,7 @@ soil.values.clean %>% pull(As_EPA3051) %>% min()
 ## [1] 0
 ```
 
-```r
+``` r
 soil.values.clean %>% pull(As_EPA3051) %>% max()
 ```
 
@@ -223,7 +223,7 @@ dataset %>%
     dplyr::summarize(Mean = mean(column_name))
     
 
-```r
+``` r
 soil.values.clean %>%
     group_by(region) %>%
     dplyr::summarize(Mean = mean(As_EPA3051))
@@ -261,7 +261,7 @@ dataset %>%
 In this case, we do _not_ have to use the `dplyr::summarize` command before `hist()` because there's only one function called `hist()` in the packages we're using.
 
 
-```r
+``` r
 soil.values.clean %>% 
     pull(As_EPA3051) %>% 
     hist(main = 'Histogram of Arsenic Concentration', 
@@ -283,7 +283,7 @@ boxplot(arsenic_concentration ~ grouping_variable,
     ylab = "y_axis_title")
 
 
-```r
+``` r
 boxplot(As_EPA3051 ~ region, data = soil.values.clean,
         main = "Arsenic Concentration by Geographic Region",
         xlab = "Region",
