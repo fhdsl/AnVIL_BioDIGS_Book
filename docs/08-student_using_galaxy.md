@@ -22,11 +22,11 @@ Your instructor will give you information on which workspace you should clone. A
 
 Clone the workspace by clicking the teardrop button (![teardrop button](resources/images/teardrop.png){#id .class width=25 height=20px}). And selecting “Clone”.
 
-<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_625.png" title="Screenshot showing the teardrop button. The button has been clicked revealing the &quot;clone&quot; option. The Clone option and the teardrop button are highlighted." alt="Screenshot showing the teardrop button. The button has been clicked revealing the &quot;clone&quot; option. The Clone option and the teardrop button are highlighted." width="480" />
+<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_625.png" alt="Screenshot showing the teardrop button. The button has been clicked revealing the &quot;clone&quot; option. The Clone option and the teardrop button are highlighted." width="480" />
 
 In the first box, give your Workspace clone a name by adding an underscore (“_”) and your name. For example, “SARS-CoV-2-Genome_Ava_Hoffman”. Next, select the Billing project provided by your instructor. Leave the bottom two boxes as-is and click “CLONE WORKSPACE”.
 
-<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_648.png" title="Screenshot showing the &quot;clone a workspace&quot; popout. The Workspace name, Billing Project, and Clone Workspace button have been filled in and highlighted." alt="Screenshot showing the &quot;clone a workspace&quot; popout. The Workspace name, Billing Project, and Clone Workspace button have been filled in and highlighted." width="480" />
+<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_648.png" alt="Screenshot showing the &quot;clone a workspace&quot; popout. The Workspace name, Billing Project, and Clone Workspace button have been filled in and highlighted." width="480" />
 
 ## Video overview on using Galaxy
 
@@ -56,23 +56,23 @@ Currently, you will need to use Chrome or Safari as your browser for Galaxy clou
 
 In your new Workspace, click on the “ANALYSES” tab. Next, click on “START”. You should see a popup window on the right side of the screen. Click on the Galaxy logo to proceed.
 
-<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_788.png" title="Screenshot of the Workspace Notebooks tab. The notebook tab name and the plus button that starts a cloud environment for Galaxy have been highlighted," alt="Screenshot of the Workspace Notebooks tab. The notebook tab name and the plus button that starts a cloud environment for Galaxy have been highlighted," width="480" />
+<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_788.png" alt="Screenshot of the Workspace Notebooks tab. The notebook tab name and the plus button that starts a cloud environment for Galaxy have been highlighted," width="480" />
 
 Click on “NEXT” and “CREATE” to keep all settings as-is.
 
-<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_798.png" title="The CREATE button among cloud environments has been highlighted." alt="The CREATE button among cloud environments has been highlighted." width="480" />
+<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_798.png" alt="The CREATE button among cloud environments has been highlighted." width="480" />
 
 Click on the Galaxy icon. 
 
-<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_g2283b458fae_100_31.png" title="The Galaxy icon appears if the environment has been successfully launched." alt="The Galaxy icon appears if the environment has been successfully launched." width="480" />
+<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_g2283b458fae_100_31.png" alt="The Galaxy icon appears if the environment has been successfully launched." width="480" />
 
 You will see that the environment is still being set up.
 
-<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_g2283b458fae_100_38.png" title="The status of the cloud computing environment shows that it is still being set up." alt="The status of the cloud computing environment shows that it is still being set up." width="480" />
+<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_g2283b458fae_100_38.png" alt="The status of the cloud computing environment shows that it is still being set up." width="480" />
 
 This will take 8-10 minutes. When it is done, click “Open”. You might need to refresh the page.
 
-<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_g2283b458fae_100_46.png" title="The Provisioning status text has changed to &quot;Launch Galaxy&quot; indicating the cloud environment is ready to use." alt="The Provisioning status text has changed to &quot;Launch Galaxy&quot; indicating the cloud environment is ready to use." width="480" />
+<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_g2283b458fae_100_46.png" alt="The Provisioning status text has changed to &quot;Launch Galaxy&quot; indicating the cloud environment is ready to use." width="480" />
 
 :::{.notice}
 Remember that you can refresh your browser or navigate away at any time. This is because the connection to the environment is in the cloud, not on your personal computer.
@@ -90,7 +90,7 @@ Notice the three main sections.
 
 **History** - When you start a project you will be able to see all of the documents in the project in the history. Now be aware, this can become very busy. Also the naming that Galaxy uses is not very intuitive, so you must make sure that you label your files with something that makes sense to you.
 
-<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_816.png" title="Screenshot of the Galaxy landing page. The Tools and History headings have been highlighted." alt="Screenshot of the Galaxy landing page. The Tools and History headings have been highlighted." width="480" />
+<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_816.png" alt="Screenshot of the Galaxy landing page. The Tools and History headings have been highlighted." width="480" />
 
 On the welcome page, there are links to tutorials. You may try these out on your own. If you want to try a new analysis this is a good place to start.
 
@@ -101,13 +101,13 @@ Once you are done with your activity, you’ll need to shut down your Galaxy clo
 
 Return to AnVIL, and find the Galaxy logo that shows your cloud environment is running. Click on this logo:
 
-<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_134.png" title="Screenshot of the Workspace menu. The currently running Galaxy cloud environment logo on the top right of the page is highlighted." alt="Screenshot of the Workspace menu. The currently running Galaxy cloud environment logo on the top right of the page is highlighted." width="480" />
+<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_134.png" alt="Screenshot of the Workspace menu. The currently running Galaxy cloud environment logo on the top right of the page is highlighted." width="480" />
 
 Next, click on “DELETE ENVIRONMENT OPTIONS”:
 
-<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_140.png" title="Screenshot of the cloud environment pop out menu. The “DELETE ENVIRONMENT OPTIONS” link is highlighted." alt="Screenshot of the cloud environment pop out menu. The “DELETE ENVIRONMENT OPTIONS” link is highlighted." width="480" />
+<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_140.png" alt="Screenshot of the cloud environment pop out menu. The “DELETE ENVIRONMENT OPTIONS” link is highlighted." width="480" />
 
 Finally, select “Delete everything, including persistent disk”. Make sure you are done with the activity and then click “DELETE”.
 
-<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_146.png" title="Screenshot of the cloud environment pop out menu. The “Delete everything, including persistent disk” radio button has been checked and is highlighted. The “DELETE” button is highlighted." alt="Screenshot of the cloud environment pop out menu. The “Delete everything, including persistent disk” radio button has been checked and is highlighted. The “DELETE” button is highlighted." width="480" />
+<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_146.png" alt="Screenshot of the cloud environment pop out menu. The “Delete everything, including persistent disk” radio button has been checked and is highlighted. The “DELETE” button is highlighted." width="480" />
 
