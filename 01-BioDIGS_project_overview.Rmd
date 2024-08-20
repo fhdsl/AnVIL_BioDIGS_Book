@@ -6,7 +6,7 @@
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_biodigs_overview.Rmd",
-  branch = "setup-for-borrowing",
+  branch = "main",
   repo_name = "fhdsl/GDSCN_BioDIGS_Book"
 )
 ```
