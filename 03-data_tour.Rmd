@@ -1,4 +1,4 @@
-# Data
+# BioDIGS Data
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
