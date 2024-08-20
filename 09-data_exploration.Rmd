@@ -32,7 +32,7 @@ This activity will teach you how to use the AnVIL platform to:
 
 We will use the `BioDIGS` package to retrieve the data. We first need to install the package from where it is stored on GitHub.
 
-```{r, message = FALSE, warning = FALSE, eval=F}
+```{r, message = FALSE, warning = FALSE}
 
 devtools::install_github("fhdsl/BioDIGSData")
 ```
