@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 14 Using RStudio on AnVIL | GDSCN Book: BioDIGS in the Classroom</title>
+  <title>Chapter 5 Data | GDSCN Book: BioDIGS in the Classroom</title>
   <meta name="description" content="This is a companion training guide for BioDIGS, a GDSCN project." />
   <meta name="generator" content="bookdown 0.39.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 14 Using RStudio on AnVIL | GDSCN Book: BioDIGS in the Classroom" />
+  <meta property="og:title" content="Chapter 5 Data | GDSCN Book: BioDIGS in the Classroom" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is a companion training guide for BioDIGS, a GDSCN project." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 14 Using RStudio on AnVIL | GDSCN Book: BioDIGS in the Classroom" />
+  <meta name="twitter:title" content="Chapter 5 Data | GDSCN Book: BioDIGS in the Classroom" />
   
   <meta name="twitter:description" content="This is a companion training guide for BioDIGS, a GDSCN project." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/GDSCN_style/gdscn_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="getting-credit-for-professional-development.html"/>
-<link rel="next" href="using-galaxy-on-anvil.html"/>
+<link rel="prev" href="data-1.html"/>
+<link rel="next" href="billing.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -344,108 +344,30 @@ div.csl-indent {
 <div class="hero-image-container">
   <img class= "hero-image" src="assets/GDSCN_style/dasl_thin_main_image.png">
 </div>
-<div id="using-rstudio-on-anvil" class="section level1 hasAnchor" number="14">
-<h1><span class="header-section-number">Chapter 14</span> Using RStudio on AnVIL<a href="using-rstudio-on-anvil.html#using-rstudio-on-anvil" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>In the next few steps, you will walk through how to get set up to use RStudio on the AnVIL platform. AnVIL is centered around different “Workspaces”. Each Workspace functions almost like a mini code laboratory - it is a place where data can be examined, stored, and analyzed. The first thing we want to do is to copy or “clone” a Workspace to create a space for you to experiment.</p>
-<p>Use a web browser to go to the AnVIL website. In the browser type:</p>
-<pre><code>anvil.terra.bio</code></pre>
-<div class="notice">
-<p><strong>Tip</strong>
-At this point, it might make things easier to open up a new window in your browser and split your screen. That way, you can follow along with this guide on one side and execute the steps on the other.</p>
+<div id="data-2" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Data<a href="data-2.html#data-2" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>There are currently three major kinds of data available from BioDIGS: sample metadata, soil testing data, and genomics and metagenomics data. All of these are available for use in your classroom.</p>
+<div id="sample-metadata" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Sample Metadata<a href="data-2.html#sample-metadata" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This dataset contains information about the samples themselves, including GPS coordinates for the sample location, date the sample was taken, and the site name. This dataset is also available from the <a href="https://biodigs.org/#site_data">BioDIGS website</a></p>
+<p>You can also see images of each sampling site and soil characteristics at the <a href="https://biodigs.org/#sample_map">sample map</a>.</p>
 </div>
-<p>Your instructor will give you information on which workspace you should clone.</p>
-<div id="video-overview-of-rstudio-on-anvil" class="section level2 hasAnchor" number="14.1">
-<h2><span class="header-section-number">14.1</span> Video overview of RStudio on AnVIL<a href="using-rstudio-on-anvil.html#video-overview-of-rstudio-on-anvil" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Here is a video tutorial that describes the basics of using RStudio on AnVIL.</p>
-<iframe src="https://drive.google.com/file/d/1v72ZG8JIRDUaewFQgGfcCO_qoM4eYmYX/preview" width="640" height="360" allow="autoplay">
-</iframe>
-<div id="objectives-3" class="section level3 hasAnchor" number="14.1.1">
-<h3><span class="header-section-number">14.1.1</span> Objectives<a href="using-rstudio-on-anvil.html#objectives-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>Start compute for your RStudio environment</li>
-<li>Tour RStudio on AnVIL</li>
-<li>Stop compute to minimize expenses</li>
-</ul>
+<div id="soil-testing-data" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Soil Testing Data<a href="data-2.html#soil-testing-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This dataset includes basic information about the soil itself like pH, percentage of organic matter, variety of soil metal concentrations. The complete data dictionary is available <a href="https://docs.google.com/spreadsheets/d/109xYUM48rjj33B76hZ3bNlrm8u-_S6uyoE_3wSCp0r0/edit#gid=188448677">here</a>. The dataset is available at the <a href="https://biodigs.org/#soil_data">BioDIGS website</a>.</p>
+<p>This dataset was generated by the <a href="https://www.udel.edu/canr/cooperative-extension/environmental-stewardship/soil-testing/">Delaware Soil Testing Program</a> at the University of Delaware.</p>
 </div>
-<div id="slides-3" class="section level3 hasAnchor" number="14.1.2">
-<h3><span class="header-section-number">14.1.2</span> Slides<a href="using-rstudio-on-anvil.html#slides-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The slides for this tutorial are are located <a href="https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw">here</a>.</p>
-</div>
-</div>
-<div id="launching-rstudio-1" class="section level2 hasAnchor" number="14.2">
-<h2><span class="header-section-number">14.2</span> Launching RStudio<a href="using-rstudio-on-anvil.html#launching-rstudio-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="warning">
-<p>AnVIL is very versatile and can scale up to use very powerful cloud computers. It’s very important that you select a cloud computing environment appropriate to your needs to avoid runaway costs. If you are uncertain, start with the default settings; it is fairly easy to increase your compute resources later, if needed, but harder to scale down.</p>
-</div>
-<p>Note that, in order to use RStudio, you must have access to a Terra Workspace with permission to compute (i.e. you must be a “Writer” or “Owner” of the Workspace).</p>
-<ol style="list-style-type: decimal">
-<li><p>Open Terra - use a web browser to go to <a href="https://anvil.terra.bio/"><code>anvil.terra.bio</code></a></p></li>
-<li><p>In the drop-down menu on the left, navigate to “Workspaces”. Click the triple bar in the top left corner to access the menu. Click “Workspaces”.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g117989bd49c_0_150.png" alt="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." width="100%" /></p></li>
-<li><p>Click on the name of your Workspace. You should be routed to a link that looks like: <code>https://anvil.terra.bio/#workspaces/&lt;billing-project&gt;/&lt;workspace-name&gt;</code>.</p></li>
-<li><p>Click on the cloud icon on the far right to access your Cloud Environment options.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_22.png" alt="Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted." width="100%" /></p></li>
-<li><p>In the dialogue box, click the “Settings” button under RStudio.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_18.png" alt="Screenshot of the Cloud Environment Details dialogue box. The Settings button under RStudio is highlighted." width="100%" /></p></li>
-<li><p>You will see some details about the default RStudio cloud environment, and a list of costs because it costs a small amount of money to use cloud computing.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_35.png" alt="Screenshot of the RStudio Cloud Environment dialogue box. The cost to run the environment is highlighted." width="100%" /></p></li>
-<li><p>If you are uncertain about what you need, the default configuration is a reasonable, cost-conservative choice. It is fairly easy to increase your compute resources later, if needed, but harder to scale down. Click the “Create” button.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_41.png" alt="Screenshot of the RStudio Cloud Environment dialogue box. The &quot;CREATE&quot; button is highlighted." width="100%" /></p></li>
-<li><p>Otherwise, click “CUSTOMIZE” to modify the environment for your needs.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_48.png" alt="Screenshot of the RStudio Cloud Environment dialogue box. The &quot;CUSTOMIZE&quot; button is highlighted." width="100%" /></p></li>
-<li><p>The dialogue box will close and you will be returned to your Workspace. You can see the status of your cloud environment by hovering over the RStudio logo. It will take a few minutes for Terra to request computers and install software.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_91.png" alt="Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is &quot;Creating&quot;." width="100%" /></p></li>
-<li><p>When your environment is ready, its status will change to “Running”. Click on the RStudio logo to open a new dialogue box that will let you launch RStudio.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_95.png" alt="Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is &quot;Running&quot;." width="100%" /></p></li>
-<li><p>Click the launch icon to open RStudio. This is also where you can pause, modify, or delete your environment when needed.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_99.png" alt="Screenshot of the RStudio Environment Details dialogue box. The &quot;Open&quot; button is highlighted." width="100%" /></p></li>
-<li><p>You should now see the RStudio interface with information about the version printed to the console.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_103.png" alt="Screenshot of the RStudio environment interface." width="100%" /></p></li>
-</ol>
-</div>
-<div id="touring-rstudio-1" class="section level2 hasAnchor" number="14.3">
-<h2><span class="header-section-number">14.3</span> Touring RStudio<a href="using-rstudio-on-anvil.html#touring-rstudio-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Next, we will be using RStudio and the package <code>Glimma</code> to create interactive plots. See <a href="https://bioconductor.org/packages/release/bioc/vignettes/Glimma/inst/doc/limma_edger.html">this vignette</a> for more information.</p>
-<ol style="list-style-type: decimal">
-<li><p>The Bioconductor team has created a very useful package to programmatically interact with Terra and Google Cloud. Install the <code>AnVIL</code> package. It will make some steps easier as we go along.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_49.png" alt="Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted." width="480" /></p></li>
-<li><p>You can now quickly install precompiled binaries using the AnVIL package’s <code>install()</code> function. We will use it to install the <code>Glimma</code> package and the <code>airway</code> package. The <code>airway</code> package contains a <code>SummarizedExperiment</code> data class. This data describes an RNA-Seq experiment on four human airway smooth muscle cell lines treated with dexamethasone.</p></li>
-</ol>
-<p>{Note: for some of the packages, you will have to install packaged from the CRAN repository, using the install.packages() function. The examples will show you which install method to use.}</p>
-<pre><code>&lt;img src=&quot;resources/images/08-student_using_rstudio_files/figure-html//1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_56.png&quot; alt=&quot;Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted.&quot; width=&quot;480&quot; /&gt;</code></pre>
-<ol style="list-style-type: decimal">
-<li><p>Load the example data.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_56.png" alt="Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted." width="480" /></p></li>
-<li><p>The multidimensional scaling (MDS) plot is frequently used to explore differences in samples. When this data is MDS transformed, the first two dimensions explain the greatest variance between samples, and the amount of variance decreases monotonically with increasing dimension. The following code will launch a new window where you can interact with the MDS plot.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_70.png" alt="Screenshot of the Glimma popout showing the data in an MDS plot. All data points are blue." width="480" /></p></li>
-<li><p>Change the <code>colour_by</code> setting to “groups” so you can easily distinguish between groups. In this data, the “group” is the treatment.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_77.png" alt="Screenshot of the Glimma popout showing the data in an MDS plot. Data points are colored blue and orange by group. The colour by dropdown menu on the interactive plot is hightlighted." width="480" /></p></li>
-<li><p>You can download the interactive html file by clicking on “Save As”.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6da7f_0_0.png" alt="Screenshot of the Glimma popout showing the data in an MDS plot. The Save As menu is highlighted." width="480" /></p></li>
-<li><p>You can also download plots and other files created directly in RStudio. To download the following plot, click on “Export” and save in your preferred format to the default directory. This saves the file in your cloud environment.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6da7f_0_12.png" alt="Screenshot of the RStudio interface. A plot has been created. The Export menu has been highlighted." width="480" /></p></li>
-<li><p>You should see the plot in the “Files” pane.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6da7f_0_19.png" alt="Screenshot of the RStudio interface. A plot has been created. The saved pdf file is now visible under the &quot;Files&quot; pane." width="480" /></p></li>
-<li><p>Select this file and click “More” &gt; “Export”</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6db6a_0_0.png" alt="Screenshot of the RStudio interface. A plot has been created. The saved pdf file is now visible under the &quot;Files&quot; pane. The &quot;More&quot; and &quot;Export&quot; menus have been highlighted." width="480" /></p></li>
-<li><p>Select “Download” to save the file to your local machine.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6db6a_0_8.png" alt="Screenshot of the RStudio interface. The popup to download the selected file has been highlighted," width="480" /></p></li>
-</ol>
-</div>
-<div id="pausing-rstudio-1" class="section level2 hasAnchor" number="14.4">
-<h2><span class="header-section-number">14.4</span> Pausing RStudio<a href="using-rstudio-on-anvil.html#pausing-rstudio-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ol style="list-style-type: decimal">
-<li><p>The right-hand side icon reminds you that you are accruing cloud computing costs. If you don’t see this icon, you may need to scroll to the right.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_84.png" alt="Screenshot of the RStudio interface. The icon on the right showing that the cloud environment is running is highlighted." width="100%" /></p></li>
-<li><p>You should minimize charges when you are not performing an analysis. You can do this by clicking on the RStudio icon and selecting “Pause”. This will release the CPU and memory resources for other people to use. Note that your work will be saved in the environment and continue to accrue a very small cost. This work will be lost if the cloud environment gets deleted. If there is anything you would like to save permanently, it’s a good idea to copy it from your compute environment to another location, such as the Workspace bucket, GitHub, or your local machine, depending on your needs.</p>
-<p><img src="resources/images/08-student_using_rstudio_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_91.png" alt="Screenshot of the RStudio menu. The pause button which stops the cloud environment is highlighted." width="100%" /></p></li>
-</ol>
-<div class="notice">
-<p>You can also pause your cloud environment(s) at <a href="https://anvil.terra.bio/#clusters" class="uri">https://anvil.terra.bio/#clusters</a>.</p>
-</div>
+<div id="genomics-and-metagenomics-data" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Genomics and Metagenomics Data<a href="data-2.html#genomics-and-metagenomics-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>You can access this data in both raw and processed forms.</p>
+<p>The Illumina and Nanopore sequences were generated at the <a href="https://grcf.jhmi.edu/">Johns Hopkins University Genetic Resources Core Facility</a>. PacBio sequencing was done by <a href="https://www.pacb.com/">PacBio</a> directly.</p>
+<p>More information coming soon!</p>
 
 </div>
 </div>
+
+
+
 <hr>
 <center> 
   <div class="footer">
@@ -459,8 +381,8 @@ At this point, it might make things easier to open up a new window in your brows
           </div>
         </div>
       </div>
-<a href="getting-credit-for-professional-development.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="using-galaxy-on-anvil.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="billing.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
