@@ -32,7 +32,6 @@ This activity will teach you how to use the AnVIL platform to:
 
 We will use the `BioDIGS` package to retrieve the data. We first need to install the package from where it is stored on GitHub.
 
-
 ```{r, message = FALSE, warning = FALSE, eval=F}
 
 devtools::install_github("fhdsl/BioDIGSData")
@@ -199,7 +198,7 @@ soil.values.clean %>%
     dplyr::summarize(Mean = mean(As_EPA3051))
 ```
 
-Now we know that the mean arsenic concentration might be different for each region, and appears higher for the Baltimore City samples than the Montgomery County samples.
+Now we know that the mean arsenic concentration might be different for each region. In particular, the mean arsenic concentration appears higher for the Baltimore City samples than the Montgomery County samples.
 
 ::: {.reflection}
 QUESTIONS:
