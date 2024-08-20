@@ -1,6 +1,4 @@
 # BioDIGS in the Classroom
-[![Render Bookdown and Coursera](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml/badge.svg)](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml)
-
 This course was created from [the AnVIL Template](https://github.com/jhudsl/AnVIL_bookdown_style), which is based on [the OTTR Template](https://github.com/jhudsl/OTTR_Template)
 
 You can see the rendered course material [here](https://hutchdatascience.org/GDSCN_BioDIGS_Book/)
