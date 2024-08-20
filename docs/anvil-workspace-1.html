@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 17 Exploring Soil Testing Data With R | GDSCN Book: BioDIGS in the Classroom</title>
+  <title>Chapter 14 AnVIL Workspace | GDSCN Book: BioDIGS in the Classroom</title>
   <meta name="description" content="This is a companion training guide for BioDIGS, a GDSCN project." />
   <meta name="generator" content="bookdown 0.39.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 17 Exploring Soil Testing Data With R | GDSCN Book: BioDIGS in the Classroom" />
+  <meta property="og:title" content="Chapter 14 AnVIL Workspace | GDSCN Book: BioDIGS in the Classroom" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is a companion training guide for BioDIGS, a GDSCN project." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 17 Exploring Soil Testing Data With R | GDSCN Book: BioDIGS in the Classroom" />
+  <meta name="twitter:title" content="Chapter 14 AnVIL Workspace | GDSCN Book: BioDIGS in the Classroom" />
   
   <meta name="twitter:description" content="This is a companion training guide for BioDIGS, a GDSCN project." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/GDSCN_style/gdscn_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="using-galaxy-on-anvil.html"/>
-<link rel="next" href="about-the-authors.html"/>
+<link rel="prev" href="getting-credit-for-professional-development.html"/>
+<link rel="next" href="using-rstudio-on-anvil.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -349,181 +349,34 @@ div.csl-indent {
 <div class="hero-image-container">
   <img class= "hero-image" src="assets/GDSCN_style/dasl_thin_main_image.png">
 </div>
-<div id="exploring-soil-testing-data-with-r" class="section level1 hasAnchor" number="17">
-<h1><span class="header-section-number">Chapter 17</span> Exploring Soil Testing Data With R<a href="exploring-soil-testing-data-with-r.html#exploring-soil-testing-data-with-r" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>In this activity, you’ll have a chance to become familiar with the BioDIGS soil testing data. This dataset includes information on the inorganic components of each soil sample, particularly metal concentrations. Human activity can increase the concentration of inorganic compounds in the soil. When cars drive on roads, compounds from the exhaust, oil, and other fluids might settle onto the roads and be washed into the soil. When we put salt on roads, parking lots, and sidewalks, the salts themselves will eventually be washed away and enter the ecosystem through both water and soil. Chemicals from factories and other businesses also leech into our environment. All of this means the concentration of heavy metals and other chemicals will vary among the soil samples collected for the BioDIGS project.</p>
-<div id="before-you-start" class="section level2 hasAnchor" number="17.1">
-<h2><span class="header-section-number">17.1</span> Before You Start<a href="exploring-soil-testing-data-with-r.html#before-you-start" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="anvil-workspace-1" class="section level1 hasAnchor" number="14">
+<h1><span class="header-section-number">Chapter 14</span> AnVIL Workspace<a href="anvil-workspace-1.html#anvil-workspace-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>You can easily access the data on AnVIL by cloning the dedicated workspace. These sections guide you through creating an AnVIL account and accessing the workspace.</p>
+<div id="create-google-account-1" class="section level2 hasAnchor" number="14.1">
+<h2><span class="header-section-number">14.1</span> Create Google Account<a href="anvil-workspace-1.html#create-google-account-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>If you do not already have a Google account that you would like to use for accessing Terra, <a href="https://accounts.google.com/SignUp">create one now</a>.</p>
 <p>If you would like to create a Google account that is associated with your non-Gmail, institutional email address, follow <a href="https://support.terra.bio/hc/en-us/articles/360029186611">these instructions</a>.</p>
 </div>
-<div id="objectives-5" class="section level2 hasAnchor" number="17.2">
-<h2><span class="header-section-number">17.2</span> Objectives<a href="exploring-soil-testing-data-with-r.html#objectives-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>This activity will teach you how to use the AnVIL platform to:</p>
+<div id="clone-the-workspace-1" class="section level2 hasAnchor" number="14.2">
+<h2><span class="header-section-number">14.2</span> Clone the Workspace<a href="anvil-workspace-1.html#clone-the-workspace-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ol style="list-style-type: decimal">
-<li>Import data into RStudio</li>
-<li>Examine a csv file that contains the soil testing data from the BioDIGS project</li>
-<li>Calculate summary statistics for variables in the soil testing data</li>
-<li>Create and interpret histograms and boxplots for variables in the soil testing data</li>
+<li><p><a href="https://anvil.terra.bio/#workspaces">Launch Terra</a></p></li>
+<li><p>Locate the Workspace you want to clone. If a Workspace has been shared with you ahead of time, it will appear in “MY WORKSPACES”. You can clone a Workspace that was shared with you to perform your own analyses. In the screenshot below, no Workspaces have been shared.</p>
+<p><img src="resources/images/08-student_anvil_guide_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_0.png" alt="Screenshot of Terra &quot;MY WORKSPACES&quot; menu. The &quot;MY WORKSPACES&quot; tab is highlighted. No Workspaces are visible because none have been shared with the user. There is an option to create a new Workspace." width="480" /></p></li>
+<li><p>If a Workspace hasn’t been shared with you, navigate to the “FEATURED” or “PUBLIC” Workspace tabs.</p>
+<p><img src="resources/images/08-student_anvil_guide_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_144.png" alt="Screenshot of Terra &quot;My Workspaces&quot; menu. The &quot;FEATURED&quot; tab is highlighted." width="480" /></p></li>
+<li><p>Use the search box to find the Workspace you want to clone.</p>
+<p><img src="resources/images/08-student_anvil_guide_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_288.png" alt="Screenshot of Terra &quot;My Workspaces&quot; menu. The search bar is highlighted and the user has typed in the term &quot;COVID-19&quot;. A Workspace related to COVID-19 appears in the results." width="480" /></p></li>
+<li><p>Click the teardrop button on the far right next to the Workspace you want to clone. Click “Clone”. You can also clone the Workspace from the Workspace Dashboard instead of the search results.</p>
+<p><img src="resources/images/08-student_anvil_guide_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_432.png" alt="Screenshot of Terra &quot;My Workspaces&quot; menu with the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The &quot;Clone&quot; option from the list is highlighted." width="480" />
+<img src="resources/images/08-student_anvil_guide_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_577.png" alt="Screenshot of the Dashboard for the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The &quot;Clone&quot; option from the list is highlighted." width="480" /></p></li>
+<li><p>You will see a popup box appear. Name your Workspace and select the appropriate Terra Billing Project. <strong>All activity in the Workspace will be charged to this Billing Project</strong> (regardless of who conducted it). Remember that each Workspace should have its own Billing Project.</p>
+<p><img src="resources/images/08-student_anvil_guide_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_722.png" alt="Screenshot of the &quot;clone workspace&quot; Terra popup dialog box. The Workspace name and Billing Project dropdown are highlighted. Text has been filled in for the Workspace name as &quot;Lab-member-1-workspace-2&quot;." width="480" /></p></li>
+<li><p>If you are working with protected data, you can set the <strong>Authorization Domain</strong> to limit who can be added to your Workspace. Note that the Authorization Domain cannot be changed after the Workspace is created (i.e. there is no way to make this Workspace shareable with a larger audience in the future). Workspaces by default are only visible to people you specifically share them with. Authorization domains add an extra layer of enforcement over privacy, but by nature make sharing more complicated. We recommend using Authorization Domains in cases where it is extremely important and/or legally required that the data be kept private (e.g. protected patient data, industry data). For data you would merely prefer not be shared with the world, we recommend relying on standard Workspace sharing permissions rather than Authorization Domains, as Authorization Domains can make future collaborations, publications, or other sharing complicated.</p>
+<p><img src="resources/images/08-student_anvil_guide_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_867.png" alt="Screenshot of Terra popup dialog box for creating a new Workspace. The drop-down menu labeled &quot;Authorization domain&quot; is highlighted." width="480" /></p></li>
+<li><p>Click “CLONE WORKSPACE”. The new Workspace should now show up under your Workspaces.</p>
+<p><img src="resources/images/08-student_anvil_guide_files/figure-html/1JvfOluHe543cUCyyH3zz0ew-1J1QjhdYGZufW9NrC_M_g117abafa453_0_1012.png" alt="Screenshot of Terra popup dialog box for creating a new Workspace. The &quot;Clone Workspace&quot; button is highlighted." width="480" /></p></li>
 </ol>
-</div>
-<div id="part-1.-data-import" class="section level2 hasAnchor" number="17.3">
-<h2><span class="header-section-number">17.3</span> Part 1. Data Import<a href="exploring-soil-testing-data-with-r.html#part-1.-data-import" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>We will use the <code>BioDIGS</code> package to retrieve the data. We first need to install the package from where it is stored on GitHub.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="exploring-soil-testing-data-with-r.html#cb7-1" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;fhdsl/BioDIGSData&quot;</span>)</span></code></pre></div>
-<p>Once you’ve installed the package, we can load the library and assign the soil testing data to an <em>object</em>. This command follows the code structure:</p>
-<p>dataset_object_name &lt;- stored_BioDIGS_dataset</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="exploring-soil-testing-data-with-r.html#cb8-1" tabindex="-1"></a><span class="fu">library</span>(BioDIGSData)</span>
-<span id="cb8-2"><a href="exploring-soil-testing-data-with-r.html#cb8-2" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="exploring-soil-testing-data-with-r.html#cb8-3" tabindex="-1"></a>soil.values <span class="ot">&lt;-</span> <span class="fu">BioDIGS_soil_data</span>()</span></code></pre></div>
-<p>It <em>seems</em> like the dataset loaded, but it’s always a good idea to verify. There are many ways to check, but the easiest approach (if you’re using RStudio) is to look at the Environment tab on the upper right-hand side of the screen. You should now have an object called <code>soil.values</code> that includes some number of observations for 28 variables. The <em>observations</em> refer to the number of rows in the dataset, while the <em>variables</em> tell you the number of columns. As long as neither the observations or variables are 0, you can be confident that your dataset loaded.</p>
-<p>Let’s take a quick look at the dataset. We can do this by clicking on soil.values object in the Environment tab. (Note: this is equivalent to typing <code>View(soil.values)</code> in the R console.)</p>
-<p><img src="resources/images/08-environment.png" title="If the dataset loaded, you will see an object with non-zero observations and variables in the Environment tab" alt="If the dataset loaded, you will see an object with non-zero observations and variables in the Environment tab" style="display: block; margin: auto;" /></p>
-<p>This will open a new window for us to scroll through the dataset.</p>
-<p><img src="resources/images/08-scrolling_through_dataset.png" title="You can click on the object in the Environment tab to open a new window that allows you to scroll through the loaded dataset" alt="You can click on the object in the Environment tab to open a new window that allows you to scroll through the loaded dataset" style="display: block; margin: auto;" /></p>
-<p>Well, the data definitely loaded, but those column names aren’t immediately understandable. What could <strong>As_EPA3051</strong> possibly mean? In addition to the dataset, we need to load the <em>data dictionary</em> as well.</p>
-<div class="dictionary">
-<p><strong>Data dictionary:</strong> a file containing the names, definitions, and attributes about data in a database or dataset.</p>
-</div>
-<p>In this case, the data dictionary can help us make sense of what sort of values each column represents. The data dictionary for the BioDIGS soil testing data is available in the R package (see code below), but we have also reproduced it here.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="exploring-soil-testing-data-with-r.html#cb9-1" tabindex="-1"></a>?<span class="fu">BioDIGS_soil_data</span>()</span></code></pre></div>
-<div class="dictionary">
-<ul>
-<li><strong>site_id</strong> Unique letter and number site name</li>
-<li><strong>full_name</strong> Full site name</li>
-<li><strong>As_EPA3051</strong> Arsenic (mg/kg), EPA Method 3051A. Quantities &lt; 3.0 are not detectable.</li>
-<li><strong>Cd_EPA3051</strong> Cadmium (mg/kg), EPA Method 3051A. Quantities &lt; 0.2 are not detectable.</li>
-<li><strong>Cr_EPA3051</strong> Chromium (mg/kg), EPA Method 3051A</li>
-<li><strong>Cu_EPA3051</strong> Copper (mg/kg), EPA Method 3051A</li>
-<li><strong>Ni_EPA3051</strong> Nickel (mg/kg), EPA Method 3051A</li>
-<li><strong>Pb_EPA3051</strong> Lead (mg/kg), EPA Method 3051A</li>
-<li><strong>Zn_EPA3051</strong> Zinc (mg/kg), EPA Method 3051A</li>
-<li><strong>water_pH</strong></li>
-<li><strong>A-E_Buffer_pH</strong></li>
-<li><strong>OM_by_LOI_pct</strong> Organic Matter by Loss on Ignition</li>
-<li><strong>P_Mehlich3</strong> Phosphorus (mg/kg), using the Mehlich 3 soil test extractant</li>
-<li><strong>K_Mehlich3 Potassium</strong> (mg/kg), using the Mehlich 3 soil test extractant</li>
-<li><strong>Ca_Mehlich3</strong> Calcium (mg/kg), using the Mehlich 3 soil test extractant</li>
-<li><strong>Mg_Mehlich3</strong> Magnesium (mg/kg), using the Mehlich 3 soil test extractant</li>
-<li><strong>Mn_Mehlich3</strong> Manganese (mg/kg), using the Mehlich 3 soil test extractant</li>
-<li><strong>Zn_Mehlich3</strong> Zinc (mg/kg), using the Mehlich 3 soil test extractant</li>
-<li><strong>Cu_Mehlich3</strong> Copper (mg/kg), using the Mehlich 3 soil test extractant</li>
-<li><strong>Fe_Mehlich3</strong> Iron (mg/kg), using the Mehlich 3 soil test extractant</li>
-<li><strong>B_Mehlich3</strong> Boron (mg/kg), using the Mehlich 3 soil test extractant</li>
-<li><strong>S_Mehlich3</strong> Sulfur (mg/kg), using the Mehlich 3 soil test extractant</li>
-<li><strong>Na_Mehlich3</strong> Sodium (mg/kg), using the Mehlich 3 soil test extractant</li>
-<li><strong>Al_Mehlich3</strong> Aluminum (mg/kg), using the Mehlich 3 soil test extractant</li>
-<li><strong>Est_CEC</strong> Cation Exchange Capacity (meq/100g) at pH 7.0 (CEC)</li>
-<li><strong>Base_Sat_pct</strong> Base saturation (BS). This represents the percentage of CEC occupied by bases (Ca2+, Mg2+, K+, and Na+). The %BS increases with increasing soil pH. The availability of Ca2+, Mg2+, and K+ increases with increasing %BS.</li>
-<li><strong>P_Sat_ratio</strong> Phosphorus saturation ratio. This is the ratio between the amount of phosphorus present in the soil and the total capacity of that soil to retain phosphorus. The ability of phosphorus to be bound in the soil is primary a function of iron (Fe) and aluminum (Al) content in that soil.</li>
-</ul>
-</div>
-<p>Using the data dictionary, we find that the values in column <code>As_EPA3051</code> give us the arsenic concentration in mg/kg of each soil sample, as determined by EPA Method 3051A. While arsenic can occur naturally in soils, higher levels suggest the soil may have been contaminated by mining, hazardous waste, or pesticide application. Arsenic is toxic to humans.</p>
-<p>We can also look at just the names of all the columns using the R console using the <code>colnames()</code> command.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="exploring-soil-testing-data-with-r.html#cb10-1" tabindex="-1"></a><span class="fu">colnames</span>(soil.values)</span></code></pre></div>
-<pre><code>##  [1] &quot;site_id&quot;       &quot;site_name&quot;     &quot;type&quot;          &quot;As_EPA3051&quot;   
-##  [5] &quot;Cd_EPA3051&quot;    &quot;Cr_EPA3051&quot;    &quot;Cu_EPA3051&quot;    &quot;Ni_EPA3051&quot;   
-##  [9] &quot;Pb_EPA3051&quot;    &quot;Zn_EPA3051&quot;    &quot;water_pH&quot;      &quot;OM_by_LOI_pct&quot;
-## [13] &quot;P_Mehlich3&quot;    &quot;K_Mehlich3&quot;    &quot;Ca_Mehlich3&quot;   &quot;Mg_Mehlich3&quot;  
-## [17] &quot;Mn_Mehlich3&quot;   &quot;Zn_Mehlich3&quot;   &quot;Cu_Mehlich3&quot;   &quot;Fe_Mehlich3&quot;  
-## [21] &quot;B_Mehlich3&quot;    &quot;S_Mehlich3&quot;    &quot;Na_Mehlich3&quot;   &quot;Al_Mehlich3&quot;  
-## [25] &quot;Est_CEC&quot;       &quot;Base_Sat_pct&quot;  &quot;P_Sat_ratio&quot;   &quot;region&quot;</code></pre>
-<p>Most of the column names are found in the data dictionary, but the very last column (“region”) isn’t. How peculiar! Let’s look at what sort of values this particular column contains. The tab with the table of the <code>soil.views</code> object should still be open in the upper left pane of the RStudio window. If not, you can open it again by clicking on <code>soils.view</code> in the Environment pane, or by using the <code>View()</code> command.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="exploring-soil-testing-data-with-r.html#cb12-1" tabindex="-1"></a><span class="fu">View</span>(soil.values)</span></code></pre></div>
-<p><img src="resources/images/08-soil_values_object.png" title="Switch to the soil.values tab to look at what values are in the region column" alt="Switch to the soil.values tab to look at what values are in the region column" style="display: block; margin: auto;" /></p>
-<p>If you scroll to the end of the table, we can see that “region” seems to refer to the city or area where the samples were collected. For example, the first 24 samples all come from Baltimore City.</p>
-<p><img src="resources/images/08-region.png" title="We can see the first samples in the dataset were collected in Baltimore City" alt="We can see the first samples in the dataset were collected in Baltimore City" style="display: block; margin: auto;" /></p>
-<p>You may notice that some cells in the <code>soil.values</code> table contain <em>NA</em>. This just means that the soil testing data for that sample isn’t available yet. We’ll take care of those values in the next part.</p>
-<div class="reflection">
-<p>QUESTIONS:</p>
-<ol style="list-style-type: decimal">
-<li><p>How many observations are in the soil testing values dataset that you loaded? What do each of these observations refer to?</p></li>
-<li><p>What data is found in the column labeled “Fe_Mehlich3”? Why would we be interested how much of this is in the soil? (You may have to search the internet for this answer.)</p></li>
-</ol>
-</div>
-</div>
-<div id="part-2.-data-summarization" class="section level2 hasAnchor" number="17.4">
-<h2><span class="header-section-number">17.4</span> Part 2. Data Summarization<a href="exploring-soil-testing-data-with-r.html#part-2.-data-summarization" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Now that we have the dataset loaded, let’s explore the data in more depth.</p>
-<p>First, we should remove those samples that don’t have soil testing data yet. We <em>could</em> keep them in the dataset, but removing them at this stage will make the analysis a little cleaner. In this case, as we know the reason the data are missing (and that reason will not skew our analysis), we can safely remove these samples. This will not be the case for every data analysis.</p>
-<p>We can remove the unanalyzed samples using the <code>drop_na()</code> function from the <code>tidyr</code> package. This function removes any rows from a table that contains <em>NA</em> for a particular column. This command follows the code structure:</p>
-<p>dataset_new_name &lt;- dataset %&gt;% drop_na(column_name)</p>
-<p>The `%&gt;% is called a pipe and it tells R that the commands after it should all be applied to the object in front of it. (In this case, we can filter out all samples missing a value for “As_EPA3051” as a proxy for samples without soil testing data.)</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="exploring-soil-testing-data-with-r.html#cb13-1" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
-<span id="cb13-2"><a href="exploring-soil-testing-data-with-r.html#cb13-2" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="exploring-soil-testing-data-with-r.html#cb13-3" tabindex="-1"></a>soil.values.clean <span class="ot">&lt;-</span> soil.values <span class="sc">%&gt;%</span> <span class="fu">drop_na</span>(As_EPA3051)</span></code></pre></div>
-<p>Great! Now let’s calculate some basic statistics. For example, we might want to know what the mean (average) lead concentration is for each soil sample. According to the data dictionary, the values for lead concentration are in the column labeled “Pb_EPA3051”. We can use a combination of two functions: <code>pull()</code> and <code>mean()</code>.<code>pull()</code> lets you extract a column from your table for statistical analysis, while <code>mean()</code> calculates the average value for the extracted column.</p>
-<p>This command follows the code structure:</p>
-<p>OBJECT %&gt;% pull(column_name) %&gt;% mean()</p>
-<p><code>pull()</code> is a command from the <code>tidyverse</code> package, so we’ll need to load that library before our command.</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="exploring-soil-testing-data-with-r.html#cb14-1" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb14-2"><a href="exploring-soil-testing-data-with-r.html#cb14-2" tabindex="-1"></a></span>
-<span id="cb14-3"><a href="exploring-soil-testing-data-with-r.html#cb14-3" tabindex="-1"></a>soil.values.clean <span class="sc">%&gt;%</span> <span class="fu">pull</span>(As_EPA3051) <span class="sc">%&gt;%</span> <span class="fu">mean</span>()</span></code></pre></div>
-<pre><code>## [1] 5.10875</code></pre>
-<p>We can run similar commands to calculate the standard deviation, minimum, and maximum for the soil arsenic values.</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="exploring-soil-testing-data-with-r.html#cb16-1" tabindex="-1"></a>soil.values.clean <span class="sc">%&gt;%</span> <span class="fu">pull</span>(As_EPA3051) <span class="sc">%&gt;%</span> <span class="fu">sd</span>()</span></code></pre></div>
-<pre><code>## [1] 5.606926</code></pre>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="exploring-soil-testing-data-with-r.html#cb18-1" tabindex="-1"></a>soil.values.clean <span class="sc">%&gt;%</span> <span class="fu">pull</span>(As_EPA3051) <span class="sc">%&gt;%</span> <span class="fu">min</span>()</span></code></pre></div>
-<pre><code>## [1] 0</code></pre>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="exploring-soil-testing-data-with-r.html#cb20-1" tabindex="-1"></a>soil.values.clean <span class="sc">%&gt;%</span> <span class="fu">pull</span>(As_EPA3051) <span class="sc">%&gt;%</span> <span class="fu">max</span>()</span></code></pre></div>
-<pre><code>## [1] 27.3</code></pre>
-<p>As you can see, the standard deviation of the arsenic concentrations is listed first, then the minimum concentration, and finally the maximum concentration.</p>
-<p>The soil testing dataset contains samples from multiple geographic regions, so maybe it’s more meaningful to find out what the average arsenic values are for each region. We have to do a little bit of clever coding trickery for this using the <code>group_by</code> and <code>summarize</code> functions. First, we tell R to split our dataset up by a particular column (in this case, region) using the <code>group_by</code> function, then we tell R to summarize the mean arsenic concentration for each group. Because there are several different functions with the name <code>summarize</code> in R, we have to specify that we want to use <code>summarize</code> from the <code>dplyr</code> package. This command follows the code structure:</p>
-<p>dataset %&gt;%
-group_by(column_name) %&gt;%
-dplyr::summarize(Mean = mean(column_name))</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="exploring-soil-testing-data-with-r.html#cb22-1" tabindex="-1"></a>soil.values.clean <span class="sc">%&gt;%</span></span>
-<span id="cb22-2"><a href="exploring-soil-testing-data-with-r.html#cb22-2" tabindex="-1"></a>    <span class="fu">group_by</span>(region) <span class="sc">%&gt;%</span></span>
-<span id="cb22-3"><a href="exploring-soil-testing-data-with-r.html#cb22-3" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">summarize</span>(<span class="at">Mean =</span> <span class="fu">mean</span>(As_EPA3051))</span></code></pre></div>
-<pre><code>## # A tibble: 2 × 2
-##   region             Mean
-##   &lt;chr&gt;             &lt;dbl&gt;
-## 1 Baltimore City     5.56
-## 2 Montgomery County  4.66</code></pre>
-<p>Now we know that the mean arsenic concentration might be different for each region, and appears higher for the Baltimore City samples than the Montgomery County samples.</p>
-<div class="reflection">
-<p>QUESTIONS:</p>
-<ol start="3" style="list-style-type: decimal">
-<li><p>What is the mean iron concentration for samples in this dataset? What about the standard deviation, minimum value, and maximum value?</p></li>
-<li><p>Calculate the mean iron concentration by region. Which region has the highest mean iron concentration? What about the lowest?</p></li>
-</ol>
-</div>
-</div>
-<div id="part-3.-data-visualization" class="section level2 hasAnchor" number="17.5">
-<h2><span class="header-section-number">17.5</span> Part 3. Data Visualization<a href="exploring-soil-testing-data-with-r.html#part-3.-data-visualization" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Often, it can be easier to immediately interpret data displayed as a plot than as a list of values. For example, we can more easily understand how the arsenic concentration of the soil samples are distributed if we create histograms compared to looking at point values like mean, standard deviation, minimum, and maximum.</p>
-<p>One way to make histograms in R is to use the <code>hist()</code> function. We can again use the <code>pull()</code> command and pipes (<code>%&gt;%</code>) to choose the column we want from the <code>soil.values.clean</code> dataset and make a histogram of them. Remember, this command follows the code structure:</p>
-<p>dataset %&gt;%
-pull(column_name) %&gt;%
-hist(main = chart_title, xlab = x_axis_title)</p>
-<p>In this case, we do <em>not</em> have to use the <code>dplyr::summarize</code> command before <code>hist()</code> because there’s only one function called <code>hist()</code> in the packages we’re using.</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="exploring-soil-testing-data-with-r.html#cb24-1" tabindex="-1"></a>soil.values.clean <span class="sc">%&gt;%</span> </span>
-<span id="cb24-2"><a href="exploring-soil-testing-data-with-r.html#cb24-2" tabindex="-1"></a>    <span class="fu">pull</span>(As_EPA3051) <span class="sc">%&gt;%</span> </span>
-<span id="cb24-3"><a href="exploring-soil-testing-data-with-r.html#cb24-3" tabindex="-1"></a>    <span class="fu">hist</span>(<span class="at">main =</span> <span class="st">&#39;Histogram of Arsenic Concentration&#39;</span>, </span>
-<span id="cb24-4"><a href="exploring-soil-testing-data-with-r.html#cb24-4" tabindex="-1"></a>         <span class="at">xlab =</span><span class="st">&#39;Concentration in mg/kg&#39;</span> )</span></code></pre></div>
-<p><img src="resources/images/09-data_exploration_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
-<p>We can see that almost all the soil samples had very low concentrations of arsenic (which is good news for the soil health!). In fact, many of them had arsenic concentrations close to 0, and only one sampling location appears to have high levels of arsenic.</p>
-<p>We might also want to graphically compare arsenic concentrations among the geographic regions in our dataset. We can do this by creating boxplots. Boxplots are particularly useful when comparing the mean, variation, and distributions among multiple groups. In R, one way to create a boxplot is using the <code>boxplot()</code> function. We don’t need to use pipes for this command, but instead will specify what columns we want to use from the dataset inside the <code>boxplot()</code> function itself.</p>
-<p>This command follows the code structure:</p>
-<p>boxplot(arsenic_concentration ~ grouping_variable,
-data = dataset,
-main = “Title of Graph”,
-xlab = “x_axis_title”,
-ylab = “y_axis_title”)</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="exploring-soil-testing-data-with-r.html#cb25-1" tabindex="-1"></a><span class="fu">boxplot</span>(As_EPA3051 <span class="sc">~</span> region, <span class="at">data =</span> soil.values.clean,</span>
-<span id="cb25-2"><a href="exploring-soil-testing-data-with-r.html#cb25-2" tabindex="-1"></a>        <span class="at">main =</span> <span class="st">&quot;Arsenic Concentration by Geographic Region&quot;</span>,</span>
-<span id="cb25-3"><a href="exploring-soil-testing-data-with-r.html#cb25-3" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">&quot;Region&quot;</span>,</span>
-<span id="cb25-4"><a href="exploring-soil-testing-data-with-r.html#cb25-4" tabindex="-1"></a>        <span class="at">ylab =</span> <span class="st">&quot;Arsenic Concentration in mg/kg&quot;</span>)</span></code></pre></div>
-<p><img src="resources/images/09-data_exploration_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
-<p>By using a boxplot, we can quickly see that, while one sampling site within Baltimore City has a very high concentration of arsenic in the soil, in general there isn’t a difference in arsenic content between Baltimore City and Montgomery County.</p>
-<div class="reflection">
-<p>QUESTIONS:</p>
-<ol start="5" style="list-style-type: decimal">
-<li><p>Create a histogram for <em>iron</em> concentration, as well as a boxplot comparing iron concentration by region. Is the iron concentration similar among regions? Are there any outlier sites with unusually high or low iron concentrations?</p></li>
-<li><p>Create a histogram for <em>lead</em> concentration, as well as a boxplot comparing lead concentration by region. Is the lead concentration similar among regions? Are there any outlier sites with unusually high or low lead concentrations?</p></li>
-<li><p>Look at the maps for <a href="https://biodigs.org/#iron_map">iron</a> and <a href="https://biodigs.org/#lead_map">lead</a> on the BioDIGS website. Do the boxplots you created make sense, given what you see on these maps? Why or why not?</p></li>
-</ol>
-</div>
 
 </div>
 </div>
@@ -540,8 +393,8 @@ ylab = “y_axis_title”)</p>
           </div>
         </div>
       </div>
-<a href="using-galaxy-on-anvil.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="about-the-authors.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="getting-credit-for-professional-development.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="using-rstudio-on-anvil.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

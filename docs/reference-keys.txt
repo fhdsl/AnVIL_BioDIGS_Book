@@ -65,6 +65,9 @@ set-up-billing-projects
 set-permissions-on-the-workspace
 notify-terra
 getting-credit-for-professional-development
+anvil-workspace-1
+create-google-account-1
+clone-the-workspace-1
 using-rstudio-on-anvil
 video-overview-of-rstudio-on-anvil
 objectives-3
