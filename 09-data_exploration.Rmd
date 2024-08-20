@@ -32,12 +32,6 @@ This activity will teach you how to use the AnVIL platform to:
 
 We will use the `BioDIGS` package to retrieve the data. We first need to install the package from where it is stored on GitHub.
 
-```{r, message = FALSE, warning = FALSE, echo = FALSE}
-
-library(readr)
-soil.values <- read_csv(file = "soil_testing_data.csv")
-```
-
 
 ```{r, message = FALSE, warning = FALSE, eval=F}
 
@@ -48,7 +42,7 @@ Once you've installed the package, we can load the library and assign the soil t
 
 dataset_object_name <- stored_BioDIGS_dataset
 
-```{r, message = FALSE, warning = FALSE, eval=F}
+```{r, message = FALSE, warning = FALSE}
 
 library(BioDIGSData)
 
