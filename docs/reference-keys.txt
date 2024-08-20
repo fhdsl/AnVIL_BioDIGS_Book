@@ -13,8 +13,7 @@ support
 funding
 sponsors
 analytical-and-computational-support
-data-1
-data-2
+biodigs-data
 sample-metadata
 soil-testing-data
 genomics-and-metagenomics-data
