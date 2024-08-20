@@ -1,51 +1,39 @@
-<!--Delete this section below upon using the template-->
-
-## AnVIL Template
-
-Based on [_Open-source Tools for Training Resources (OTTR)_](https://github.com/jhudsl/OTTR_Template)
-
-The purpose of this template and is to make publishing maintenance for AnVIL content across multiple different platforms _less painful_.
-
-_This template helps you_:   
-
-- Edit and write an AnVIL course in [RMarkdown files](https://rmarkdown.rstudio.com/) and have it published to multiple different platforms:
-  - [Leanpub](https://leanpub.com/bookstore?type=course)
-  - [Bookdown](https://bookdown.org/)
-  - [Coursera](https://www.coursera.org/)
-- Have [Github action robots](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots) do your repetitive tasks like spell check and re-rendering. 
-- Use [automagic conversion](https://github.com/jhudsl/ottrpal) to ease the lift of prepping the material for different platforms' formats.
-- Use [our Docker image](https://hub.docker.com/repository/docker/jhudsl/course_template) for consistency across authors as well as to help you [avoid dependency hell](https://en.wikipedia.org/wiki/Dependency_hell). 
-
-<img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=gf4fcf6569c_2_29" width="500"/>
-
-## To Get Started
-- Go to [ottrproject.org](https://www.ottrproject.org/).
-- Please take a look at the [code of conduct](./code_of_conduct.md).
-- If you encounter any problems or have improvement ideas for this template repository, please [file an issue](https://github.com/jhudsl/AnVIL_bookdown_style/issues/new/choose)! Issues for the parent repository (the OTTR template repository) are also very much appreciated and can be submitted [here](https://github.com/jhudsl/OTTR_Template/issues/new/choose).
-
-<!--Delete everything above this line upon using the template-->
-
-# {Course Name}
-
+# BioDIGS in the Classroom
 [![Render Bookdown and Coursera](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml/badge.svg)](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml)
 
 This course was created from [the AnVIL Template](https://github.com/jhudsl/AnVIL_bookdown_style), which is based on [the OTTR Template](https://github.com/jhudsl/OTTR_Template)
 
-You can see the rendered course material here: {Link to rendered bookdown and/or to the Leanpub. Will look something like: https://jhudatascience.org/{Course_Name}}
+You can see the rendered course material [here](https://hutchdatascience.org/GDSCN_BioDIGS_Book/)
 
 ## About this course
+This is a companion training guide for BioDIGS, a GDSCN project that brings a research experience into the classroom. Visit the BioDIGS (BioDiversity and Informatics for Genomics Scholars) website [here](https://biodigs.org/) for more information about this collaborative, distributed research project, including how you can get involved!
 
-This course introduces {info on what this course introduces}
+The GDSCN (Genomics Data Science Community Network) is a consortium of educators who aim to create a world where researchers, educators, and students from diverse backgrounds are able to fully participate in genomic data science research. You can find more information about its mission and initiatives [here](https://www.gdscn.org/home).
 
-## Learning Objectives
+```{r echo=FALSE, fig.alt="BioDIGS logo", out.width='300px', fig.align='center'}
+knitr::include_graphics("https://raw.githubusercontent.com/fhdsl/GDSCN_BioDIGS_Book/main/assets/GDSCN_style/logo_BioDIGS_final.png")
+```
 
-This course will teach learners to:  
+One critical aspect of an undergraduate STEM education is hands-on research. Undergraduate research experiences enhance what students learn in the classroom as well as increase a student's interest in pursuing STEM careers [@Russell2007]. It can also lead to improved scientific reasoning and increased academic performance overall [@Buffalari2020]. However, many students at underresourced institutions like community colleges, Historically Black Colleges and Universities (HBCUs), tribal colleges and universities, and Hispanic-serving institutions have limited access to research opportunities compared to their cohorts at larger four-year colleges and R1 institutions. These students are also more likely to belong to groups that are already under-represented in STEM disciplines, particularly genomics and data science [@Canner2017; @GDSCN2022].
 
-- {You can use https://www.bobpikegroup.com/trainer-blog/5-steps-to-writing-clear-and-measurable-learning-objectives to define some learning objectives here}
-- {More learning objectives}
+The BioDIGS Project aims to be at the intersection of genomics, data science, cloud computing, and education.
+
+## Target Audience
+
+The activities in this guide are written for undergraduate students and beginning graduate students. Some sections require basic understanding of the R programming language, which is indicated at the beginning of the chapter.
+
+## Platform
+
+The activities in this guide are demonstrated on NHGRI's [AnVIL](https://anvilproject.org/) cloud computing platform. AnVIL is the preferred computing platform for the GDSCN. However, all of these activities can be done using your personal installation of R or using the online [Galaxy](usegalaxy.org) portal.
+
+## Data
+
+The data generated by the BioDIGS project is available as an R package (BioDIGSData, https://github.com/fhdsl/BioDIGSData), through the [BioDIGS website](biodigs.org), or through an [AnVIL workspace](https://anvilproject.org).
+
+Data about the soil itself as well as soil metal content was generated by the [Delaware Soil Testing Program](https://www.udel.edu/canr/cooperative-extension/environmental-stewardship/soil-testing/) at the University of Delaware. Sequences were generated by the [Johns Hopkins University Genetic Resources Core Facility](https://grcf.jhmi.edu/) and by [PacBio](https://www.pacb.com/).
 
 ## Encountering problems?
 
-If you are encountering any problems with this course, please file a GitHub issue or contact us at {Some email or web address with a contact form}.
+If you are encountering any problems with this course, please file a GitHub issue or contact Ava Hoffman (ahoffma2 at fredhutch.org) or Elizabeth Humphries (ehumphri at fredhutch.org).
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />All materials in this course are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> unless noted otherwise.
