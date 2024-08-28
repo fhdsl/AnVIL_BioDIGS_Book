@@ -1,4 +1,4 @@
-# BioDIGS in the Classroom
+# BioDIGS in the Classroom: Getting Started
 
 [![Render Bookdown](https://github.com/fhdsl/GDSCN_BioDIGS_Book//actions/workflows/render-all.yml/badge.svg)](https://github.com/fhdsl/GDSCN_BioDIGS_Book//actions/workflows/render-all.yml)
 
