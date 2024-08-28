@@ -33,7 +33,7 @@ In the first box, give your Workspace clone a name by adding an underscore (“_
 
 Here is a video tutorial that describes the basics of using Galaxy on AnVIL.
 
-<iframe src="https://drive.google.com/file/d/16QEY8x-gBsUkKEeO3w_H-I4SLIBPloXd/preview" width="640" height="360" allow="autoplay"></iframe>
+<iframe width="560" height="315" src="https://youtu.be/9TEVu7QobOo?si=tLFXNe951vVJV4iN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Objectives
 
@@ -43,7 +43,7 @@ Here is a video tutorial that describes the basics of using Galaxy on AnVIL.
 
 ### Slides
 
-The slides for this tutorial are are located [here](https://docs.google.com/presentation/d/1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q).
+The slides for this tutorial are are located [here](https://docs.google.com/presentation/d/1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q/edit?usp=sharing).
 
 
 ## Starting Galaxy {#starting-galaxy}
@@ -99,15 +99,15 @@ On the welcome page, there are links to tutorials. You may try these out on your
 
 Once you are done with your activity, you’ll need to shut down your Galaxy cloud environment. This frees up the cloud resources for others and minimizes computing cost. The following steps will delete your work, so make sure you are completely finished at this point. Otherwise, you will have to repeat your work from the previous steps.
 
-Return to AnVIL, and find the Galaxy logo that shows your cloud environment is running. Click on this logo:
+Return to AnVIL, and find the Galaxy logo that shows your cloud environment is running. Click on this logo.
 
-<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_134.png" alt="Screenshot of the Workspace menu. The currently running Galaxy cloud environment logo on the top right of the page is highlighted." width="480" />
+<img src="resources/images/08-student_using_galaxy_files/figure-html//1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q_ge20e585f11_0_248.png" alt="Screenshot of the Workspace menu. The currently running Galaxy cloud environment logo on the right sidebar is highlighted." width="480" />
 
-Next, click on “DELETE ENVIRONMENT OPTIONS”:
+Next, click on "Settings". Click on "Delete Environment".
 
-<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_140.png" alt="Screenshot of the cloud environment pop out menu. The “DELETE ENVIRONMENT OPTIONS” link is highlighted." width="480" />
+<img src="resources/images/08-student_using_galaxy_files/figure-html//1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q_ge20e585f11_0_256.png" alt="Screenshot of the cloud environment pop out menu. The &quot;Delete Environment&quot; button is highlighted." width="480" />
 
-Finally, select “Delete everything, including persistent disk”. Make sure you are done with the activity and then click “DELETE”.
+Finally, select "Delete everything, including persistent disk". Make sure you are done with the activity and then click "Delete".
 
-<img src="resources/images/08-student_using_galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_146.png" alt="Screenshot of the cloud environment pop out menu. The “Delete everything, including persistent disk” radio button has been checked and is highlighted. The “DELETE” button is highlighted." width="480" />
+<img src="resources/images/08-student_using_galaxy_files/figure-html//1UIfBMQcujMzyNTyIiMXQ6eU0DdWHmI9QUtseGylg6Ms_g117989bd49c_0_0.png" alt="Screenshot of the cloud environment pop out menu. The “Delete everything, including persistent disk” radio button has been checked and is highlighted. The “Delete” button is highlighted." width="480" />
 
