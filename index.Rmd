@@ -1,5 +1,5 @@
 ---
-title: "GDSCN Book: BioDIGS in the Classroom"
+title: "BioDIGS: Getting Started"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book

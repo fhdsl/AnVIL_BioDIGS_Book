@@ -1,4 +1,4 @@
-book_filename: "BioDIGS in the Classroom"
+book_filename: "BioDIGS: Getting Started"
 chapter_name: "Chapter "
 repo: https://github.com/jhudsl/AnVIL_BioDIGS_Book/
 rmd_files: ["index.Rmd",
