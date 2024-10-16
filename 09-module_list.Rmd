@@ -1,4 +1,4 @@
-# (PART\*) Available Modules {-}
+# (PART\*) Classroom Modules {-}
 
 
 ```{r, include = FALSE}
