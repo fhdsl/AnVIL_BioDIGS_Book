@@ -80,10 +80,6 @@ objectives-4
 slides-4
 navigating-galaxy-1
 deleting-galaxy-1
-exploring-soil-testing-data-with-r
-before-you-start
-objectives-5
-part-1.-data-import
-part-2.-data-summarization
-part-3.-data-visualization
+r-programming-language
+galaxy
 references
