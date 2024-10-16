@@ -5,10 +5,14 @@
 ottrpal::set_knitr_image_path()
 ```
 
+# Currently Available
+
 Here are the currently available modules for using the BioDIGS data.
 
 [Exploring Soil Data](https://hutchdatascience.org/GDSCN_BioDIGS_Soil/): explore the abiotic soil characteristics using the tidyverse in R
 
-Antimicrobial Resistance: examine microbial data for evidence of antimicrobial resistance genes using ABRIcate on Galaxy. COMING SOON!
+# Coming Soon
 
-Biosynthetic Gene Clusters: identify biosynthetic gene clusters in microbiome data using antiSMASH on Galaxy. COMING SOON!
+Antimicrobial Resistance: examine microbial data for evidence of antimicrobial resistance genes using ABRIcate on Galaxy. 
+
+Biosynthetic Gene Clusters: identify biosynthetic gene clusters in microbiome data using antiSMASH on Galaxy.
