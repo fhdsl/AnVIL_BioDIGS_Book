@@ -27,7 +27,7 @@ The activities in this guide are written for undergraduate students and beginnin
 
 The activities in this guide are demonstrated on NHGRI's [AnVIL](https://anvilproject.org/) cloud computing platform. AnVIL is the preferred computing platform for the GDSCN. However, all of these activities can be done using your personal installation of R or using the online [Galaxy](usegalaxy.org) portal.
 
-<img src="https://raw.githubusercontent.com/jhudsl/AnVIL_Template/blob/main/assets/GDSCN_style/powered-by-anvil.png" alt="BioDIGS logo powered by the AnVIL logo" width="500px" style="display: block; margin: auto;" />
+<img src="https://raw.githubusercontent.com/fhdsl/GDSCN_BioDIGS_Book/blob/main/assets/GDSCN_style/powered-by-anvil.png" alt="BioDIGS logo powered by the AnVIL logo" width="500px" style="display: block; margin: auto;" />
 
 ## Data
 
